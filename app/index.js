@@ -4,9 +4,11 @@ import { Provider } from 'react-redux';
 import store from './store';
 import '../public/index.css';
 
+import Routes from './routes'
+
 ReactDOM.render(
     <Provider store={store}>
-        <div>Sign Up Form</div>
+        <Routes />
     </Provider>,
-    document.getElementById('app') // make sure this is the same as the id of the div in your index.html
+    document.getElementById('app') 
 );
