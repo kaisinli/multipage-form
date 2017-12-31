@@ -1,7 +1,7 @@
-const initialState = {};
+import { combineReducers } from 'redux'
 
-function formReducer (state = initialState, action) {
-  return state;
-}
+const rootReducer = combineReducers({
+  loadPages: require('./loadPages').default,
+})
 
-export default formReducer;
+export default rootReducer
