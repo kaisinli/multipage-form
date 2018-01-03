@@ -3,5 +3,31 @@ html, body {
 }
 
 body {
-    padding: 30px;  
+    padding: 30px; 
+}
+
+#main-container {
+    width: 70%;
+        margin: 25px auto;
+
+}
+
+#main-title {
+    margin: 25px auto;
+    width: 50%;
+    border: 3px solid lightseagreen;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+button {
+    margin: 20px;
+}
+
+select, input {
+    width: 100%;
+    padding: 50px;
+    margin-bottom: 3%
 }

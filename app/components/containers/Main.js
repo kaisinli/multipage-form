@@ -1,21 +1,14 @@
 import React, { Component } from 'react';
-import Begin from '../presentational/Begin'
-import { connect } from 'react-redux'
-import { dispatchShowPages } from '../../reducers/loadPages'
+import Begin from '../presentational/Begin';
+import BasicInfo from '../presentational/BasicInfo';
 
 const Main = (props) => {
   return (
-    <div>
-      <h1>Sign Me Up</h1>
+    <div id = "main-container">
+      <h1 id = "main-title">Sign Me Up</h1>
+      {props.children}
     </div>
   )
 }
 
-// grabbing what we need from state
-const mapState = (state) => {
-  return {
-    loadPages: state.loadPages
-  }
-}
-
-export default connect(mapState, null)(Main);
+export default Main;

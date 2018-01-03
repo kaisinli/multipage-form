@@ -1,34 +1,25 @@
 import React from 'react';
-import { Route, Router } from 'react-router-dom';
+import { IndexRoute, Router, Route, browserHistory } from 'react-router';
 import history from './history'
 import Main from './components/containers/Main'
-import { connect } from 'react-redux'
-import store from './store';
-
-import { changePageStatus } from './reducers/loadPages'
+import Begin from './components/presentational/Begin';
+import BasicInfo from './components/presentational/BasicInfo';
+import Location from './components/presentational/Location';
+import Education from './components/presentational/Education';
 
 class Routes extends React.Component {
-
-  componentWillMount() {
-    store.dispatch(this.props.changePageStatus('begin'))
-  }
-
   render() {
     return (
-      <Router history={history}>
-        <Main />
+      <Router history={browserHistory}>
+        <Route path='/' component={Main}>
+          <IndexRoute component={Begin} />
+          <Route path='/basicinfo' component={BasicInfo} />
+          <Route path='/location' component={Location} />
+          <Route path='/education' component={Education} />
+        </Route>
       </Router>
     )
   }
 }
 
-const mapStateToProps = (state) => {
-  return state.loadPages
-}
-
-const mapDispatchToProps = { changePageStatus }
-
-export default connect(mapStateToProps, mapDispatchToProps)(Routes)
-
-
-
+export default (Routes)
