@@ -1,15 +1,31 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router'
+import { Link } from 'react-router';
+import { nextPage, previousPage } from '../../reducers/currentPageReducer';
 
 class Location extends React.Component {
+    constructor(props) {
+        super(props)
+        this.submitHandler = this.submitHandler.bind(this);
+        this.onBackClickHandler = this.onBackClickHandler.bind(this);
+    }
+
+    submitHandler(event) {
+        event.preventDefault()
+        let target = event.target;
+    }
+
+    onBackClickHandler(){
+        this.props.previousPage()
+    }
+
     render() {
         console.log('location', this.props)
         return (
             <div>
                 <h3>Location</h3>
                 <h6>Where are you based?</h6>
-                <form>
+                <form onSubmit = {this.submitHandler}>
                     City:
                     <input className="form-control" type="text" value = {this.props.city}/>
                     State:
@@ -70,6 +86,7 @@ class Location extends React.Component {
                     </select>
                     Country/Region:
                     <select>
+                        <option value="" defaultValue>{this.props.country}</option>
                         <option value="AFG">Afghanistan</option>
                         <option value="ALA">Åland Islands</option>
                         <option value="ALB">Albania</option>
@@ -320,21 +337,21 @@ class Location extends React.Component {
                         <option value="ZMB">Zambia</option>
                         <option value="ZWE">Zimbabwe</option>
                     </select>
-                    <Link to="/basicinfo"><button className="btn btn-secondary">Back</button></Link>
-                    <Link to="/education"><button className="btn btn-success">Next</button></Link>
+                    <button className="btn btn-secondary" onClick = {this.onBackClickHandler}>Back</button>
+                    <button className="btn btn-success" type = "submit">Next</button>
                 </form>
             </div>
         )
     }
 }
 
-const mapStateToProps = state => {
-    return {
-        firstName: state.firstName,
-        city: state.city,
-        state: state.state,
-        country: state.country
-    }
+const mapStateToProps = state => ({
+    hello: state.basicInfo
+})
+
+const mapDispatchToProps = {
+    nextPage,
+    previousPage
 }
 
-export default connect(mapStateToProps, null)(Location)
+export default connect(mapStateToProps, mapDispatchToProps)(Location)

@@ -1,14 +1,29 @@
 import React from 'react';
-import {Link} from 'react-router';
+import { Link } from 'react-router';
+import { connect } from 'react-redux';
+import { nextPage } from '../../reducers/currentPageReducer'
 
 class Begin extends React.Component {
+    constructor(props) {
+        super(props)
+        this.clickHandler = this.clickHandler.bind(this)
+    }
+
+    clickHandler() {
+        this.props.nextPage()
+    }
+
     render() {
         return (
             <div>
-                <Link to="/basicinfo"><button className="btn btn-info">Start</button></Link>
+                <button onClick={this.clickHandler} className="btn btn-info">Start</button>
             </div>
         )
     }
 }
 
-export default Begin
+const mapDispatchToProps = {
+    nextPage
+}
+
+export default connect(null, mapDispatchToProps)(Begin)

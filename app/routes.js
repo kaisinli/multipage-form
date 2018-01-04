@@ -11,12 +11,7 @@ class Routes extends React.Component {
   render() {
     return (
       <Router history={browserHistory}>
-        <Route path='/' component={Main}>
-          <IndexRoute component={Begin} />
-          <Route path='/basicinfo' component={BasicInfo} />
-          <Route path='/location' component={Location} />
-          <Route path='/education' component={Education} />
-        </Route>
+        <Route path='/' component={Main} />
       </Router>
     )
   }

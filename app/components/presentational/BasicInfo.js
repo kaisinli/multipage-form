@@ -1,39 +1,61 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router'
+import { putFirstName, putLastName, putEmail, putWebsite } from '../../reducers/basicInfoReducer';
+import { nextPage } from '../../reducers/currentPageReducer';
 
 class BasicInfo extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = { firstName: '' };
+        this.submitHandler = this.submitHandler.bind(this);
+        // this.changeHandler = this.changeHandler.bind(this)
+    }
+
+    submitHandler(event) {
+        event.preventDefault()
+        let target = event.target;
+        this.props.putFirstName(target.firstName.value);
+        this.props.putLastName(target.lastName.value);
+        this.props.putEmail(target.email.value);
+        this.props.putWebsite(target.website.value);
+        this.props.nextPage()
+    }
+
+    // changeHandler(event) {
+    //     const inputValue = event.target.value;
+    //     this.setState({ firstName: inputValue });
+    // }
+
     render() {
-        console.log(this.props)
         return (
             <div>
                 <h3>Basic Info</h3>
-                <form>
+                <form onSubmit={this.submitHandler}>
                     First Name:
-                    <input className="form-control" type="text" value = {this.props.firstName}/>
+                    <input className="form-control" name="firstName" type="text" />
                     Last Name:
-                    <input className="form-control" type="text" value = {this.props.lastName}/>
+                    <input className="form-control" name="lastName" type="text" />
                     Email:
-                    <input className="form-control" type="email" value = {this.props.email}/>
+                    <input className="form-control" name="email" type="email" />
                     Website:
-                    <input className="form-control" type="text" value = {this.props.website}/>
-                    <Link to="/"><button className="btn btn-secondary">Back</button></Link>
-                    <Link to="/location"><button className="btn btn-success">Next</button></Link>
+                    <input className="form-control" name="website" type="text" />
+                    <button className="btn btn-success" type="submit">Next</button>
                 </form>
             </div>
         )
     }
 }
 
-const mapStateToProps = state => {
-    return {
-        firstName: state.firstName,
-        lastName: state.lastName,
-        email: state.email,
-        website: state.webpage
-    }
+const mapStateToProps = state => ({
+    firstName: state.basicInfo.firstName
+})
+
+const mapDispatchToProps = {
+    putFirstName,
+    putLastName,
+    putEmail,
+    putWebsite,
+    nextPage
 }
 
-const mapDispatchToProps = {}
-
-export default connect(mapStateToProps, mapDispatchToProps)(BasicInfo)
+export default connect(null, mapDispatchToProps)(BasicInfo)
