@@ -1,3 +1,5 @@
+'use strict'
+
 //----------------------------------------< initial state >------------------------------------------
 const basicInfoInitialState = {
     firstName: '',

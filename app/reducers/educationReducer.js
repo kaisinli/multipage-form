@@ -1,39 +1,29 @@
 'use strict'
 
 //----------------------------------------< initial state >------------------------------------------
-const pageInitialState = {
-    currentPage: 0
+const schoolInitialState = {
+    school:[]
 }
 
 //----------------------------------------< action >------------------------------------------
-const GET_NEXT_PAGE = 'UPDATE_NEXT_PAGE';
-const GET_PREVIOUS_PAGE = 'GET_PREVIOUS_PAGE';
+const ADD_SCHOOL = 'ADD_SCHOOL';
 
 //----------------------------------------< action creator >------------------------------------------
-export const getNextPage = () => ({
-    type: GET_NEXT_PAGE
-})
-
-export const getPreviousPage = () => ({
-    type: GET_PREVIOUS_PAGE
+export const addSchool = (school) => ({
+    type: ADD_SCHOOL,
+    school
 })
 
 //----------------------------------------< thunk creator >------------------------------------------
-export const nextPage = () =>
-    dispatch => dispatch(getNextPage())
-
-export const previousPage = () =>
-    dispatch => dispatch(getPreviousPage())
+export const putSchool= (school) =>
+    dispatch => dispatch(addSchool(school))
 
 //----------------------------------------< reducer >------------------------------------------
-export default function (state = pageInitialState, action) {
+export default function (state = schoolInitialState, action) {
     let newState = Object.assign({}, state);
     switch (action.type) {
-        case GET_NEXT_PAGE:
-            newState.currentPage++;
-            return newState;
-        case GET_PREVIOUS_PAGE:
-            newState.currentPage--;
+        case ADD_SCHOOL:
+            newState.school.push(action.school);
             return newState;
         default:
             return state

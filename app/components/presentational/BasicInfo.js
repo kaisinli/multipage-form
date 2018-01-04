@@ -6,7 +6,7 @@ import { nextPage } from '../../reducers/currentPageReducer';
 class BasicInfo extends React.Component {
     constructor(props) {
         super(props)
-        this.state = { firstName: '' };
+        // this.state = { firstName: '' };
         this.submitHandler = this.submitHandler.bind(this);
         // this.changeHandler = this.changeHandler.bind(this)
     }

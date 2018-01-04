@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router';
 import { nextPage, previousPage } from '../../reducers/currentPageReducer';
+import { putCity, putState, putCountry } from '../../reducers/locationReducer';
+import { } from '../../reducers/locationReducer'
 
 class Location extends React.Component {
     constructor(props) {
@@ -13,9 +14,13 @@ class Location extends React.Component {
     submitHandler(event) {
         event.preventDefault()
         let target = event.target;
+        this.props.putCity(target.city.value);
+        this.props.putState(target.state.value);
+        this.props.putCountry(target.country.value);
+        this.props.nextPage()
     }
 
-    onBackClickHandler(){
+    onBackClickHandler() {
         this.props.previousPage()
     }
 
@@ -25,9 +30,9 @@ class Location extends React.Component {
             <div>
                 <h3>Location</h3>
                 <h6>Where are you based?</h6>
-                <form onSubmit = {this.submitHandler}>
+                <form onSubmit={this.submitHandler}>
                     City:
-                    <input className="form-control" type="text" value = {this.props.city}/>
+                    <input name="city" className="form-control" type="text" />
                     State:
                     <select name="state" id="state">
                         <option value="" defaultValue>{this.props.state}</option>
@@ -85,7 +90,7 @@ class Location extends React.Component {
                         <option value="OT">OTHER - Not part continental United States</option>
                     </select>
                     Country/Region:
-                    <select>
+                    <select name="country">
                         <option value="" defaultValue>{this.props.country}</option>
                         <option value="AFG">Afghanistan</option>
                         <option value="ALA">Åland Islands</option>
@@ -337,21 +342,20 @@ class Location extends React.Component {
                         <option value="ZMB">Zambia</option>
                         <option value="ZWE">Zimbabwe</option>
                     </select>
-                    <button className="btn btn-secondary" onClick = {this.onBackClickHandler}>Back</button>
-                    <button className="btn btn-success" type = "submit">Next</button>
+                    <button className="btn btn-secondary" onClick={this.onBackClickHandler}>Back</button>
+                    <button className="btn btn-success" type="submit">Next</button>
                 </form>
             </div>
         )
     }
 }
 
-const mapStateToProps = state => ({
-    hello: state.basicInfo
-})
-
 const mapDispatchToProps = {
     nextPage,
-    previousPage
+    previousPage,
+    putCity,
+    putState,
+    putCountry
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Location)
+export default connect(null, mapDispatchToProps)(Location)
