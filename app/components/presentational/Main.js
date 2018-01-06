@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import Begin from '../presentational/Begin';
-import BasicInfo from '../presentational/BasicInfo';
-import Location from '../presentational/Location';
-import Education from '../presentational/Education';
-import Summary from '../presentational/Summary';
+import Begin from '../containers/Begin';
+import BasicInfo from '../containers/BasicInfo';
+import Location from '../containers/Location';
+import Education from '../containers/Education';
+import Summary from '../containers/Summary';
 import { connect } from 'react-redux';
 
 const Main = (props) => {
-  console.log('props in main', props)
   return (
     <div id="main-container">
       <h1 id="main-title">Sign Me Up</h1>

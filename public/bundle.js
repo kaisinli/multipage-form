@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 88);
+/******/ 	return __webpack_require__(__webpack_require__.s = 83);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -261,9 +261,9 @@ process.umask = function() { return 0; };
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(89);
+  module.exports = __webpack_require__(84);
 } else {
-  module.exports = __webpack_require__(90);
+  module.exports = __webpack_require__(85);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -421,11 +421,11 @@ if (process.env.NODE_ENV !== 'production') {
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(101)(isValidElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(96)(isValidElement, throwOnDirectAccess);
 } else {
   // By explicitly using `prop-types` you are opting into new production behavior.
   // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(102)();
+  module.exports = __webpack_require__(97)();
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
@@ -435,23 +435,23 @@ if (process.env.NODE_ENV !== 'production') {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__MemoryRouter__ = __webpack_require__(138);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__MemoryRouter__ = __webpack_require__(133);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__MemoryRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Prompt__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Prompt__ = __webpack_require__(135);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__Prompt__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Redirect__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Redirect__ = __webpack_require__(136);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_2__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(65);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_3__Route__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(36);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_4__Router__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__StaticRouter__ = __webpack_require__(148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__StaticRouter__ = __webpack_require__(143);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_5__StaticRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Switch__ = __webpack_require__(149);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Switch__ = __webpack_require__(144);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_6__Switch__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__matchPath__ = __webpack_require__(38);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return __WEBPACK_IMPORTED_MODULE_7__matchPath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__withRouter__ = __webpack_require__(150);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__withRouter__ = __webpack_require__(145);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return __WEBPACK_IMPORTED_MODULE_8__withRouter__["a"]; });
 
 
@@ -488,7 +488,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 
 var React = __webpack_require__(1);
-var factory = __webpack_require__(167);
+var factory = __webpack_require__(163);
 
 if (typeof React === 'undefined') {
   throw Error(
@@ -843,6 +843,25 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 /***/ }),
 /* 11 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(99);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["b"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createProvider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
+
+
+
+
+
+
+/***/ }),
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -902,26 +921,102 @@ module.exports = invariant;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 12 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Provider__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__connect_connect__ = __webpack_require__(104);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Provider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["b"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createProvider", function() { return __WEBPACK_IMPORTED_MODULE_0__components_Provider__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connectAdvanced", function() { return __WEBPACK_IMPORTED_MODULE_1__components_connectAdvanced__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "connect", function() { return __WEBPACK_IMPORTED_MODULE_2__connect_connect__["a"]; });
 
 
+//----------------------------------------< initial state >------------------------------------------
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+exports.default = function () {
+    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : pageInitialState;
+    var action = arguments[1];
+
+    switch (action.type) {
+        case GET_BASIC_INFO_PAGE:
+            return Object.assign({}, state, { currentPage: 1 });
+        case GET_LOCATION_PAGE:
+            return Object.assign({}, state, { currentPage: 2 });
+        case GET_EDUCATION_PAGE:
+            return Object.assign({}, state, { currentPage: 3 });
+        case GET_SUMMARY_PAGE:
+            return Object.assign({}, state, { currentPage: 4 });
+        default:
+            return state;
+    }
+};
+
+var pageInitialState = {
+    currentPage: 0
+
+    //----------------------------------------< action >------------------------------------------
 
 
+};var GET_BASIC_INFO_PAGE = 'GET_BASIC_INFO_PAGE';
+var GET_LOCATION_PAGE = 'GET_LOCATION_PAGE';
+var GET_EDUCATION_PAGE = 'GET_EDUCATION_PAGE';
+var GET_SUMMARY_PAGE = 'GET_SUMMARY_PAGE';
 
+//----------------------------------------< action creator >------------------------------------------
+
+var getBasicInfoPage = exports.getBasicInfoPage = function getBasicInfoPage() {
+    return {
+        type: GET_BASIC_INFO_PAGE
+    };
+};
+
+var getLocationPage = exports.getLocationPage = function getLocationPage() {
+    return {
+        type: GET_LOCATION_PAGE
+    };
+};
+
+var getEducationPage = exports.getEducationPage = function getEducationPage() {
+    return {
+        type: GET_EDUCATION_PAGE
+    };
+};
+
+var getSummaryPage = exports.getSummaryPage = function getSummaryPage() {
+    return {
+        type: GET_SUMMARY_PAGE
+    };
+};
+
+//----------------------------------------< thunk creator >------------------------------------------
+var basicPage = exports.basicPage = function basicPage() {
+    return function (dispatch) {
+        return dispatch(getBasicInfoPage());
+    };
+};
+
+var locationPage = exports.locationPage = function locationPage() {
+    return function (dispatch) {
+        return dispatch(getLocationPage());
+    };
+};
+
+var educationPage = exports.educationPage = function educationPage() {
+    return function (dispatch) {
+        return dispatch(getEducationPage());
+    };
+};
+
+var summaryPage = exports.summaryPage = function summaryPage() {
+    return function (dispatch) {
+        return dispatch(getSummaryPage());
+    };
+};
+
+//----------------------------------------< reducer >------------------------------------------
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -957,7 +1052,7 @@ function _resetWarned() {
 }
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1202,7 +1297,7 @@ function formatPattern(pattern, params) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1301,7 +1396,7 @@ var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1325,7 +1420,7 @@ module.exports = emptyObject;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1394,7 +1489,7 @@ module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1461,7 +1556,7 @@ var createPath = exports.createPath = function createPath(location) {
 };
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1532,7 +1627,7 @@ var createPath = function createPath(location) {
 };
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1565,7 +1660,7 @@ var route = Object(__WEBPACK_IMPORTED_MODULE_0_prop_types__["oneOfType"])([__WEB
 var routes = Object(__WEBPACK_IMPORTED_MODULE_0_prop_types__["oneOfType"])([route, Object(__WEBPACK_IMPORTED_MODULE_0_prop_types__["arrayOf"])(route)]);
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1578,59 +1673,84 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function () {
-    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : pageInitialState;
+    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : infoInitialState;
     var action = arguments[1];
 
     var newState = Object.assign({}, state);
     switch (action.type) {
-        case GET_NEXT_PAGE:
-            newState.currentPage++;
+        case ADD_SCHOOL:
+            newState.school.push(action.school);
             return newState;
-        case GET_PREVIOUS_PAGE:
-            newState.currentPage--;
+        case CLEAR_SCHOOL:
+            newState.school = [];
+            return newState;
+        case UPDATE_INFO:
+            newState[action.name] = action.value;
             return newState;
         default:
             return state;
     }
 };
 
-var pageInitialState = {
-    currentPage: 0
+var infoInitialState = {
+    firstName: '',
+    lastName: '',
+    email: '',
+    website: '',
+    city: '',
+    state: '',
+    country: '',
+    school: []
 
-    //----------------------------------------< action >------------------------------------------
-};var GET_NEXT_PAGE = 'UPDATE_NEXT_PAGE';
-var GET_PREVIOUS_PAGE = 'GET_PREVIOUS_PAGE';
+    //----------------------------------------< action >-------------------------------------------------
+};var UPDATE_INFO = 'UPDATE_INFO';
+var ADD_SCHOOL = 'ADD_SCHOOL';
+var CLEAR_SCHOOL = 'CLEAR_SCHOOL';
 
 //----------------------------------------< action creator >------------------------------------------
-var getNextPage = exports.getNextPage = function getNextPage() {
+var updateInfo = exports.updateInfo = function updateInfo(name, value) {
     return {
-        type: GET_NEXT_PAGE
+        type: UPDATE_INFO,
+        name: name,
+        value: value
     };
 };
 
-var getPreviousPage = exports.getPreviousPage = function getPreviousPage() {
+var addSchool = exports.addSchool = function addSchool(school) {
     return {
-        type: GET_PREVIOUS_PAGE
+        type: ADD_SCHOOL,
+        school: school
+    };
+};
+
+var clearSchool = exports.clearSchool = function clearSchool() {
+    return {
+        type: CLEAR_SCHOOL
     };
 };
 
 //----------------------------------------< thunk creator >------------------------------------------
-var nextPage = exports.nextPage = function nextPage() {
+var putInfo = exports.putInfo = function putInfo(name, value) {
     return function (dispatch) {
-        return dispatch(getNextPage());
+        return dispatch(updateInfo(name, value));
     };
 };
 
-var previousPage = exports.previousPage = function previousPage() {
+var putSchool = exports.putSchool = function putSchool(school) {
     return function (dispatch) {
-        return dispatch(getPreviousPage());
+        return dispatch(addSchool(school));
     };
 };
 
-//----------------------------------------< reducer >------------------------------------------
+var deleteAllSchools = exports.deleteAllSchools = function deleteAllSchools() {
+    return function (dispatch) {
+        return dispatch(clearSchool());
+    };
+};
+//----------------------------------------< reducer >-----------------------------------------------
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1638,7 +1758,7 @@ var previousPage = exports.previousPage = function previousPage() {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return locationsAreEqual; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_resolve_pathname__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_value_equal__ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PathUtils__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PathUtils__ = __webpack_require__(20);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -1704,95 +1824,6 @@ var createLocation = function createLocation(path, state, key, currentLocation) 
 var locationsAreEqual = function locationsAreEqual(a, b) {
   return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash && a.key === b.key && Object(__WEBPACK_IMPORTED_MODULE_1_value_equal__["default"])(a.state, b.state);
 };
-
-/***/ }),
-/* 23 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Router__ = __webpack_require__(166);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_0__Router__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Link__ = __webpack_require__(77);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_1__Link__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__IndexLink__ = __webpack_require__(174);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "IndexLink", function() { return __WEBPACK_IMPORTED_MODULE_2__IndexLink__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__withRouter__ = __webpack_require__(175);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__withRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__IndexRedirect__ = __webpack_require__(177);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "IndexRedirect", function() { return __WEBPACK_IMPORTED_MODULE_4__IndexRedirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__IndexRoute__ = __webpack_require__(178);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "IndexRoute", function() { return __WEBPACK_IMPORTED_MODULE_5__IndexRoute__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(78);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(179);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__RouteUtils__ = __webpack_require__(8);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createRoutes", function() { return __WEBPACK_IMPORTED_MODULE_8__RouteUtils__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__RouterContext__ = __webpack_require__(41);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "RouterContext", function() { return __WEBPACK_IMPORTED_MODULE_9__RouterContext__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__PropTypes__ = __webpack_require__(43);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "locationShape", function() { return __WEBPACK_IMPORTED_MODULE_10__PropTypes__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "routerShape", function() { return __WEBPACK_IMPORTED_MODULE_10__PropTypes__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__match__ = __webpack_require__(180);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "match", function() { return __WEBPACK_IMPORTED_MODULE_11__match__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__useRouterHistory__ = __webpack_require__(82);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "useRouterHistory", function() { return __WEBPACK_IMPORTED_MODULE_12__useRouterHistory__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__PatternUtils__ = __webpack_require__(14);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "formatPattern", function() { return __WEBPACK_IMPORTED_MODULE_13__PatternUtils__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__applyRouterMiddleware__ = __webpack_require__(185);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "applyRouterMiddleware", function() { return __WEBPACK_IMPORTED_MODULE_14__applyRouterMiddleware__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__browserHistory__ = __webpack_require__(186);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "browserHistory", function() { return __WEBPACK_IMPORTED_MODULE_15__browserHistory__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__hashHistory__ = __webpack_require__(189);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "hashHistory", function() { return __WEBPACK_IMPORTED_MODULE_16__hashHistory__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__createMemoryHistory__ = __webpack_require__(79);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createMemoryHistory", function() { return __WEBPACK_IMPORTED_MODULE_17__createMemoryHistory__["a"]; });
-/* components */
-
-
-
-
-
-
-
-
-
-/* components (configuration) */
-
-
-
-
-
-
-
-
-
-
-/* utils */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* histories */
-
-
-
-
-
-
-
 
 /***/ }),
 /* 24 */
@@ -1892,8 +1923,8 @@ var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isE
 
 
 if (process.env.NODE_ENV !== 'production') {
-  var invariant = __webpack_require__(11);
-  var warning = __webpack_require__(17);
+  var invariant = __webpack_require__(12);
+  var warning = __webpack_require__(18);
   var ReactPropTypesSecret = __webpack_require__(27);
   var loggedTypeFailures = {};
 }
@@ -1998,9 +2029,9 @@ function warning(message) {
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createStore__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__combineReducers__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bindActionCreators__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__applyMiddleware__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compose__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_warning__ = __webpack_require__(59);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createStore", function() { return __WEBPACK_IMPORTED_MODULE_0__createStore__["b"]; });
@@ -2033,9 +2064,9 @@ if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__baseGetTag_js__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getPrototype_js__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__isObjectLike_js__ = __webpack_require__(109);
 
 
 
@@ -2147,7 +2178,7 @@ var _valueEqual = __webpack_require__(34);
 
 var _valueEqual2 = _interopRequireDefault(_valueEqual);
 
-var _PathUtils = __webpack_require__(18);
+var _PathUtils = __webpack_require__(19);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2633,7 +2664,7 @@ var createTransitionManager = function createTransitionManager() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp__ = __webpack_require__(141);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_path_to_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_path_to_regexp__);
 
 
@@ -2876,7 +2907,7 @@ function mapAsync(array, work, callback) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_create_react_class___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_create_react_class__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__getRouteParams__ = __webpack_require__(173);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__getRouteParams__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ContextUtils__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__RouteUtils__ = __webpack_require__(8);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -3186,7 +3217,7 @@ exports.default = runTransitionHook;
 
 exports.__esModule = true;
 
-var _AsyncUtils = __webpack_require__(184);
+var _AsyncUtils = __webpack_require__(180);
 
 var _PathUtils = __webpack_require__(9);
 
@@ -3196,7 +3227,7 @@ var _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);
 
 var _Actions = __webpack_require__(24);
 
-var _LocationUtils = __webpack_require__(15);
+var _LocationUtils = __webpack_require__(16);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -3379,11 +3410,11 @@ var canUseDOM = exports.canUseDOM = !!(typeof window !== 'undefined' && window.d
 exports.__esModule = true;
 exports.go = exports.replaceLocation = exports.pushLocation = exports.startListener = exports.getUserConfirmation = exports.getCurrentLocation = undefined;
 
-var _LocationUtils = __webpack_require__(15);
+var _LocationUtils = __webpack_require__(16);
 
 var _DOMUtils = __webpack_require__(25);
 
-var _DOMStateStorage = __webpack_require__(83);
+var _DOMStateStorage = __webpack_require__(81);
 
 var _PathUtils = __webpack_require__(9);
 
@@ -3723,7 +3754,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(93);
+var isTextNode = __webpack_require__(88);
 
 /*eslint-disable no-bitwise */
 
@@ -3816,7 +3847,7 @@ var storeShape = __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.shape({
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_Subscription__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_Subscription__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__ = __webpack_require__(54);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -4189,7 +4220,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ActionTypes; });
 /* harmony export (immutable) */ __webpack_exports__["b"] = createStore;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash_es_isPlainObject__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_symbol_observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_symbol_observable__);
 
 
@@ -4445,7 +4476,7 @@ var ActionTypes = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__root_js__ = __webpack_require__(103);
 
 
 /** Built-in value references. */
@@ -4623,187 +4654,6 @@ function verifyPlainObject(value, displayName, methodName) {
 "use strict";
 
 
-//----------------------------------------< initial state >------------------------------------------
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-exports.default = function () {
-    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : basicInfoInitialState;
-    var action = arguments[1];
-
-    switch (action.type) {
-        case UPDATE_FIRST_NAME:
-            return Object.assign({}, state, { firstName: action.firstName });
-        case UPDATE_LAST_NAME:
-            return Object.assign({}, state, { lastName: action.lastName });
-        case UPDATE_EMAIL:
-            return Object.assign({}, state, { email: action.email });
-        case UPDATE_WEBSITE:
-            return Object.assign({}, state, { website: action.website });
-        default:
-            return state;
-    }
-};
-
-var basicInfoInitialState = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    website: ''
-
-    //----------------------------------------< action >------------------------------------------
-};var UPDATE_FIRST_NAME = 'UPDATE_FIRST_NAME';
-var UPDATE_LAST_NAME = 'UPDATE_LAST_NAME';
-var UPDATE_EMAIL = 'UPDATE_EMAIL';
-var UPDATE_WEBSITE = 'UPDATE_WEBSITE';
-
-//----------------------------------------< action creator >------------------------------------------
-var updateFirstName = exports.updateFirstName = function updateFirstName(firstName) {
-    return {
-        type: UPDATE_FIRST_NAME,
-        firstName: firstName
-    };
-};
-
-var updateLastName = exports.updateLastName = function updateLastName(lastName) {
-    return {
-        type: UPDATE_LAST_NAME,
-        lastName: lastName
-    };
-};
-
-var updateEmail = exports.updateEmail = function updateEmail(email) {
-    return {
-        type: UPDATE_EMAIL,
-        email: email
-    };
-};
-
-var updateWebsite = exports.updateWebsite = function updateWebsite(website) {
-    return {
-        type: UPDATE_WEBSITE,
-        website: website
-    };
-};
-
-//----------------------------------------< thunk creator >------------------------------------------
-var putFirstName = exports.putFirstName = function putFirstName(firstName) {
-    return function (dispatch) {
-        return dispatch(updateFirstName(firstName));
-    };
-};
-
-var putLastName = exports.putLastName = function putLastName(lastName) {
-    return function (dispatch) {
-        return dispatch(updateLastName(lastName));
-    };
-};
-
-var putEmail = exports.putEmail = function putEmail(email) {
-    return function (dispatch) {
-        return dispatch(updateEmail(email));
-    };
-};
-
-var putWebsite = exports.putWebsite = function putWebsite(website) {
-    return function (dispatch) {
-        return dispatch(updateWebsite(website));
-    };
-};
-
-//----------------------------------------< reducer >------------------------------------------
-
-/***/ }),
-/* 64 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-//----------------------------------------< initial state >------------------------------------------
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-exports.default = function () {
-    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : locationInitialState;
-    var action = arguments[1];
-
-    switch (action.type) {
-        case UPDATE_CITY:
-            return Object.assign({}, state, { city: action.city });
-        case UPDATE_STATE:
-            return Object.assign({}, state, { state: action.state });
-        case UPDATE_COUNTRY:
-            return Object.assign({}, state, { country: action.country });
-        default:
-            return state;
-    }
-};
-
-var locationInitialState = {
-    city: '',
-    state: '',
-    country: ''
-
-    //----------------------------------------< action >-------------------------------------------------
-};var UPDATE_CITY = 'UPDATE_CITY';
-var UPDATE_STATE = 'UPDATE_STATE';
-var UPDATE_COUNTRY = 'UPDATE_COUNTRY';
-
-//----------------------------------------< action creator >------------------------------------------
-var updateCity = exports.updateCity = function updateCity(city) {
-    return {
-        type: UPDATE_CITY,
-        city: city
-    };
-};
-
-var updateState = exports.updateState = function updateState(state) {
-    return {
-        type: UPDATE_STATE,
-        state: state
-    };
-};
-
-var updateCountry = exports.updateCountry = function updateCountry(country) {
-    return {
-        type: UPDATE_COUNTRY,
-        country: country
-    };
-};
-
-//----------------------------------------< thunk creator >------------------------------------------
-var putCity = exports.putCity = function putCity(city) {
-    return function (dispatch) {
-        return dispatch(updateCity(city));
-    };
-};
-
-var putState = exports.putState = function putState(state) {
-    return function (dispatch) {
-        return dispatch(updateState(state));
-    };
-};
-
-var putCountry = exports.putCountry = function putCountry(country) {
-    return function (dispatch) {
-        return dispatch(updateCountry(country));
-    };
-};
-
-//----------------------------------------< reducer >-----------------------------------------------
-
-/***/ }),
-/* 65 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
 exports.__esModule = true;
 var canUseDOM = exports.canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
 
@@ -4859,7 +4709,7 @@ var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isE
 };
 
 /***/ }),
-/* 66 */
+/* 64 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4925,7 +4775,7 @@ var isExtraneousPopstateEvent = function isExtraneousPopstateEvent(event) {
 };
 
 /***/ }),
-/* 67 */
+/* 65 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5074,7 +4924,7 @@ Route.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Route);
 
 /***/ }),
-/* 68 */
+/* 66 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5177,7 +5027,7 @@ Link.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Link);
 
 /***/ }),
-/* 69 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5187,11 +5037,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createBrowserHistory = __webpack_require__(163);
+var _createBrowserHistory = __webpack_require__(158);
 
 var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 
-var _createMemoryHistory = __webpack_require__(165);
+var _createMemoryHistory = __webpack_require__(160);
 
 var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
 
@@ -5203,7 +5053,7 @@ exports.default = history;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 70 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5287,7 +5137,7 @@ var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a
 };
 
 /***/ }),
-/* 71 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5378,7 +5228,7 @@ var createTransitionManager = function createTransitionManager() {
 exports.default = createTransitionManager;
 
 /***/ }),
-/* 72 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5392,32 +5242,31 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Begin = __webpack_require__(73);
+var _Begin = __webpack_require__(161);
 
 var _Begin2 = _interopRequireDefault(_Begin);
 
-var _BasicInfo = __webpack_require__(85);
+var _BasicInfo = __webpack_require__(188);
 
 var _BasicInfo2 = _interopRequireDefault(_BasicInfo);
 
-var _Location = __webpack_require__(86);
+var _Location = __webpack_require__(189);
 
 var _Location2 = _interopRequireDefault(_Location);
 
-var _Education = __webpack_require__(87);
+var _Education = __webpack_require__(190);
 
 var _Education2 = _interopRequireDefault(_Education);
 
-var _Summary = __webpack_require__(194);
+var _Summary = __webpack_require__(191);
 
 var _Summary2 = _interopRequireDefault(_Summary);
 
-var _reactRedux = __webpack_require__(12);
+var _reactRedux = __webpack_require__(11);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Main = function Main(props) {
-  console.log('props in main', props);
   return _react2.default.createElement(
     'div',
     { id: 'main-container' },
@@ -5443,89 +5292,106 @@ var mapStateToProps = function mapStateToProps(state) {
 exports.default = (0, _reactRedux.connect)(mapStateToProps, null)(Main);
 
 /***/ }),
-/* 73 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 71 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Router__ = __webpack_require__(162);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_0__Router__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Link__ = __webpack_require__(75);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_1__Link__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__IndexLink__ = __webpack_require__(170);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "IndexLink", function() { return __WEBPACK_IMPORTED_MODULE_2__IndexLink__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__withRouter__ = __webpack_require__(171);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__withRouter__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__IndexRedirect__ = __webpack_require__(173);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "IndexRedirect", function() { return __WEBPACK_IMPORTED_MODULE_4__IndexRedirect__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__IndexRoute__ = __webpack_require__(174);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "IndexRoute", function() { return __WEBPACK_IMPORTED_MODULE_5__IndexRoute__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(76);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(175);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__RouteUtils__ = __webpack_require__(8);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createRoutes", function() { return __WEBPACK_IMPORTED_MODULE_8__RouteUtils__["b"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__RouterContext__ = __webpack_require__(41);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "RouterContext", function() { return __WEBPACK_IMPORTED_MODULE_9__RouterContext__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__PropTypes__ = __webpack_require__(43);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "locationShape", function() { return __WEBPACK_IMPORTED_MODULE_10__PropTypes__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "routerShape", function() { return __WEBPACK_IMPORTED_MODULE_10__PropTypes__["b"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__match__ = __webpack_require__(176);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "match", function() { return __WEBPACK_IMPORTED_MODULE_11__match__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__useRouterHistory__ = __webpack_require__(80);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "useRouterHistory", function() { return __WEBPACK_IMPORTED_MODULE_12__useRouterHistory__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__PatternUtils__ = __webpack_require__(15);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "formatPattern", function() { return __WEBPACK_IMPORTED_MODULE_13__PatternUtils__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__applyRouterMiddleware__ = __webpack_require__(181);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "applyRouterMiddleware", function() { return __WEBPACK_IMPORTED_MODULE_14__applyRouterMiddleware__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__browserHistory__ = __webpack_require__(182);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "browserHistory", function() { return __WEBPACK_IMPORTED_MODULE_15__browserHistory__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__hashHistory__ = __webpack_require__(185);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "hashHistory", function() { return __WEBPACK_IMPORTED_MODULE_16__hashHistory__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__createMemoryHistory__ = __webpack_require__(77);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "createMemoryHistory", function() { return __WEBPACK_IMPORTED_MODULE_17__createMemoryHistory__["a"]; });
+/* components */
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(1);
 
-var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(23);
 
-var _reactRedux = __webpack_require__(12);
 
-var _currentPageReducer = __webpack_require__(21);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+/* components (configuration) */
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Begin = function (_React$Component) {
-    _inherits(Begin, _React$Component);
 
-    function Begin(props) {
-        _classCallCheck(this, Begin);
 
-        var _this = _possibleConstructorReturn(this, (Begin.__proto__ || Object.getPrototypeOf(Begin)).call(this, props));
 
-        _this.clickHandler = _this.clickHandler.bind(_this);
-        return _this;
-    }
 
-    _createClass(Begin, [{
-        key: 'clickHandler',
-        value: function clickHandler() {
-            this.props.nextPage();
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'button',
-                    { onClick: this.clickHandler, className: 'btn btn-info' },
-                    'Start'
-                )
-            );
-        }
-    }]);
 
-    return Begin;
-}(_react2.default.Component);
 
-var mapDispatchToProps = {
-    nextPage: _currentPageReducer.nextPage
-};
+/* utils */
 
-exports.default = (0, _reactRedux.connect)(null, mapDispatchToProps)(Begin);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* histories */
+
+
+
+
+
+
+
 
 /***/ }),
-/* 74 */
+/* 72 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony export (immutable) */ __webpack_exports__["a"] = createTransitionManager;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__routerWarning__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__computeChangedRoutes__ = __webpack_require__(168);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__TransitionUtils__ = __webpack_require__(169);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__isActive__ = __webpack_require__(170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__getComponents__ = __webpack_require__(171);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__matchRoutes__ = __webpack_require__(172);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__routerWarning__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__computeChangedRoutes__ = __webpack_require__(164);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__TransitionUtils__ = __webpack_require__(165);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__isActive__ = __webpack_require__(166);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__getComponents__ = __webpack_require__(167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__matchRoutes__ = __webpack_require__(168);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -5787,7 +5653,7 @@ function createTransitionManager(history, routes) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 75 */
+/* 73 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5797,7 +5663,7 @@ function isPromise(obj) {
 }
 
 /***/ }),
-/* 76 */
+/* 74 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5827,7 +5693,7 @@ function assignRouterState(router, _ref) {
 }
 
 /***/ }),
-/* 77 */
+/* 75 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5973,7 +5839,7 @@ var Link = __WEBPACK_IMPORTED_MODULE_1_create_react_class___default()({
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 78 */
+/* 76 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5984,8 +5850,8 @@ var Link = __WEBPACK_IMPORTED_MODULE_1_create_react_class___default()({
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RouteUtils__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PatternUtils__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__InternalPropTypes__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PatternUtils__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__InternalPropTypes__ = __webpack_require__(21);
 
 
 
@@ -6072,16 +5938,16 @@ var Redirect = __WEBPACK_IMPORTED_MODULE_0_create_react_class___default()({
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 79 */
+/* 77 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = createMemoryHistory;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_useQueries__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_useQueries__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_useQueries___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_history_lib_useQueries__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_history_lib_useBasename__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_history_lib_useBasename__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_history_lib_useBasename___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_history_lib_useBasename__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_lib_createMemoryHistory__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_lib_createMemoryHistory__ = __webpack_require__(179);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_lib_createMemoryHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_history_lib_createMemoryHistory__);
 
 
@@ -6100,7 +5966,7 @@ function createMemoryHistory(options) {
 }
 
 /***/ }),
-/* 80 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6110,13 +5976,13 @@ exports.__esModule = true;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _queryString = __webpack_require__(181);
+var _queryString = __webpack_require__(177);
 
 var _runTransitionHook = __webpack_require__(44);
 
 var _runTransitionHook2 = _interopRequireDefault(_runTransitionHook);
 
-var _LocationUtils = __webpack_require__(15);
+var _LocationUtils = __webpack_require__(16);
 
 var _PathUtils = __webpack_require__(9);
 
@@ -6227,7 +6093,7 @@ var useQueries = function useQueries(createHistory) {
 exports.default = useQueries;
 
 /***/ }),
-/* 81 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6342,14 +6208,14 @@ var useBasename = function useBasename(createHistory) {
 exports.default = useBasename;
 
 /***/ }),
-/* 82 */
+/* 80 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = useRouterHistory;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_useQueries__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_useQueries__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_useQueries___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_history_lib_useQueries__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_history_lib_useBasename__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_history_lib_useBasename__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_history_lib_useBasename___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_history_lib_useBasename__);
 
 
@@ -6362,7 +6228,7 @@ function useRouterHistory(createHistory) {
 }
 
 /***/ }),
-/* 83 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6454,12 +6320,12 @@ var readState = exports.readState = function readState(key) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 84 */
+/* 82 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = createRouterHistory;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__useRouterHistory__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__useRouterHistory__ = __webpack_require__(80);
 
 
 var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
@@ -6471,1856 +6337,7 @@ function createRouterHistory(createHistory) {
 }
 
 /***/ }),
-/* 85 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRedux = __webpack_require__(12);
-
-var _basicInfoReducer = __webpack_require__(63);
-
-var _currentPageReducer = __webpack_require__(21);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var BasicInfo = function (_React$Component) {
-    _inherits(BasicInfo, _React$Component);
-
-    function BasicInfo(props) {
-        _classCallCheck(this, BasicInfo);
-
-        // this.state = { firstName: '' };
-        var _this = _possibleConstructorReturn(this, (BasicInfo.__proto__ || Object.getPrototypeOf(BasicInfo)).call(this, props));
-
-        _this.submitHandler = _this.submitHandler.bind(_this);
-        // this.changeHandler = this.changeHandler.bind(this)
-        return _this;
-    }
-
-    _createClass(BasicInfo, [{
-        key: 'submitHandler',
-        value: function submitHandler(event) {
-            event.preventDefault();
-            var target = event.target;
-            this.props.putFirstName(target.firstName.value);
-            this.props.putLastName(target.lastName.value);
-            this.props.putEmail(target.email.value);
-            this.props.putWebsite(target.website.value);
-            this.props.nextPage();
-        }
-
-        // changeHandler(event) {
-        //     const inputValue = event.target.value;
-        //     this.setState({ firstName: inputValue });
-        // }
-
-    }, {
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'h3',
-                    null,
-                    'Basic Info'
-                ),
-                _react2.default.createElement(
-                    'form',
-                    { onSubmit: this.submitHandler },
-                    'First Name:',
-                    _react2.default.createElement('input', { className: 'form-control', name: 'firstName', type: 'text' }),
-                    'Last Name:',
-                    _react2.default.createElement('input', { className: 'form-control', name: 'lastName', type: 'text' }),
-                    'Email:',
-                    _react2.default.createElement('input', { className: 'form-control', name: 'email', type: 'email' }),
-                    'Website:',
-                    _react2.default.createElement('input', { className: 'form-control', name: 'website', type: 'text' }),
-                    _react2.default.createElement(
-                        'button',
-                        { className: 'btn btn-success', type: 'submit' },
-                        'Next'
-                    )
-                )
-            );
-        }
-    }]);
-
-    return BasicInfo;
-}(_react2.default.Component);
-
-var mapStateToProps = function mapStateToProps(state) {
-    return {
-        firstName: state.basicInfo.firstName
-    };
-};
-
-var mapDispatchToProps = {
-    putFirstName: _basicInfoReducer.putFirstName,
-    putLastName: _basicInfoReducer.putLastName,
-    putEmail: _basicInfoReducer.putEmail,
-    putWebsite: _basicInfoReducer.putWebsite,
-    nextPage: _currentPageReducer.nextPage
-};
-
-exports.default = (0, _reactRedux.connect)(null, mapDispatchToProps)(BasicInfo);
-
-/***/ }),
-/* 86 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRedux = __webpack_require__(12);
-
-var _currentPageReducer = __webpack_require__(21);
-
-var _locationReducer = __webpack_require__(64);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Location = function (_React$Component) {
-    _inherits(Location, _React$Component);
-
-    function Location(props) {
-        _classCallCheck(this, Location);
-
-        var _this = _possibleConstructorReturn(this, (Location.__proto__ || Object.getPrototypeOf(Location)).call(this, props));
-
-        _this.submitHandler = _this.submitHandler.bind(_this);
-        _this.onBackClickHandler = _this.onBackClickHandler.bind(_this);
-        return _this;
-    }
-
-    _createClass(Location, [{
-        key: 'submitHandler',
-        value: function submitHandler(event) {
-            event.preventDefault();
-            var target = event.target;
-            this.props.putCity(target.city.value);
-            this.props.putState(target.state.value);
-            this.props.putCountry(target.country.value);
-            this.props.nextPage();
-        }
-    }, {
-        key: 'onBackClickHandler',
-        value: function onBackClickHandler() {
-            this.props.previousPage();
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            console.log('location', this.props);
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'h3',
-                    null,
-                    'Location'
-                ),
-                _react2.default.createElement(
-                    'h6',
-                    null,
-                    'Where are you based?'
-                ),
-                _react2.default.createElement(
-                    'form',
-                    { onSubmit: this.submitHandler },
-                    'City:',
-                    _react2.default.createElement('input', { name: 'city', className: 'form-control', type: 'text' }),
-                    'State:',
-                    _react2.default.createElement(
-                        'select',
-                        { name: 'state', id: 'state' },
-                        _react2.default.createElement(
-                            'option',
-                            { value: '', defaultValue: true },
-                            this.props.state
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'AL' },
-                            'Alabama'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'AK' },
-                            'Alaska'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'AZ' },
-                            'Arizona'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'AR' },
-                            'Arkansas'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CA' },
-                            'California'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CO' },
-                            'Colorado'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CT' },
-                            'Connecticut'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'DE' },
-                            'Delaware'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'DC' },
-                            'District Of Columbia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'FL' },
-                            'Florida'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GA' },
-                            'Georgia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'HI' },
-                            'Hawaii'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ID' },
-                            'Idaho'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'IL' },
-                            'Illinois'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'IN' },
-                            'Indiana'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'IA' },
-                            'Iowa'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'KS' },
-                            'Kansas'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'KY' },
-                            'Kentucky'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'LA' },
-                            'Louisiana'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ME' },
-                            'Maine'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MD' },
-                            'Maryland'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MA' },
-                            'Massachusetts'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MI' },
-                            'Michigan'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MN' },
-                            'Minnesota'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MS' },
-                            'Mississippi'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MO' },
-                            'Missouri'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MT' },
-                            'Montana'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NE' },
-                            'Nebraska'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NV' },
-                            'Nevada'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NH' },
-                            'New Hampshire'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NJ' },
-                            'New Jersey'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NM' },
-                            'New Mexico'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NY' },
-                            'New York'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NC' },
-                            'North Carolina'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ND' },
-                            'North Dakota'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'OH' },
-                            'Ohio'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'OK' },
-                            'Oklahoma'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'OR' },
-                            'Oregon'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'PA' },
-                            'Pennsylvania'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'RI' },
-                            'Rhode Island'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SC' },
-                            'South Carolina'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SD' },
-                            'South Dakota'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'TN' },
-                            'Tennessee'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'TX' },
-                            'Texas'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'UT' },
-                            'Utah'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'VT' },
-                            'Vermont'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'VA' },
-                            'Virginia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'WA' },
-                            'Washington'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'WV' },
-                            'West Virginia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'WI' },
-                            'Wisconsin'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'WY' },
-                            'Wyoming'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'OT' },
-                            'OTHER - Not part continental United States'
-                        )
-                    ),
-                    'Country/Region:',
-                    _react2.default.createElement(
-                        'select',
-                        { name: 'country' },
-                        _react2.default.createElement(
-                            'option',
-                            { value: '', defaultValue: true },
-                            this.props.country
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'AFG' },
-                            'Afghanistan'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ALA' },
-                            '\xC5land Islands'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ALB' },
-                            'Albania'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'DZA' },
-                            'Algeria'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ASM' },
-                            'American Samoa'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'AND' },
-                            'Andorra'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'AGO' },
-                            'Angola'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'AIA' },
-                            'Anguilla'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ATA' },
-                            'Antarctica'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ATG' },
-                            'Antigua and Barbuda'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ARG' },
-                            'Argentina'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ARM' },
-                            'Armenia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ABW' },
-                            'Aruba'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'AUS' },
-                            'Australia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'AUT' },
-                            'Austria'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'AZE' },
-                            'Azerbaijan'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BHS' },
-                            'Bahamas'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BHR' },
-                            'Bahrain'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BGD' },
-                            'Bangladesh'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BRB' },
-                            'Barbados'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BLR' },
-                            'Belarus'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BEL' },
-                            'Belgium'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BLZ' },
-                            'Belize'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BEN' },
-                            'Benin'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BMU' },
-                            'Bermuda'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BTN' },
-                            'Bhutan'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BOL' },
-                            'Bolivia, Plurinational State of'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BES' },
-                            'Bonaire, Sint Eustatius and Saba'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BIH' },
-                            'Bosnia and Herzegovina'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BWA' },
-                            'Botswana'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BVT' },
-                            'Bouvet Island'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BRA' },
-                            'Brazil'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'IOT' },
-                            'British Indian Ocean Territory'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BRN' },
-                            'Brunei Darussalam'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BGR' },
-                            'Bulgaria'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BFA' },
-                            'Burkina Faso'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BDI' },
-                            'Burundi'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'KHM' },
-                            'Cambodia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CMR' },
-                            'Cameroon'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CAN' },
-                            'Canada'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CPV' },
-                            'Cape Verde'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CYM' },
-                            'Cayman Islands'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CAF' },
-                            'Central African Republic'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'TCD' },
-                            'Chad'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CHL' },
-                            'Chile'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CHN' },
-                            'China'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CXR' },
-                            'Christmas Island'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CCK' },
-                            'Cocos (Keeling) Islands'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'COL' },
-                            'Colombia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'COM' },
-                            'Comoros'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'COG' },
-                            'Congo'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'COD' },
-                            'Congo, the Democratic Republic of the'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'COK' },
-                            'Cook Islands'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CRI' },
-                            'Costa Rica'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CIV' },
-                            'C\xF4te d\'Ivoire'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'HRV' },
-                            'Croatia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CUB' },
-                            'Cuba'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CUW' },
-                            'Cura\xE7ao'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CYP' },
-                            'Cyprus'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CZE' },
-                            'Czech Republic'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'DNK' },
-                            'Denmark'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'DJI' },
-                            'Djibouti'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'DMA' },
-                            'Dominica'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'DOM' },
-                            'Dominican Republic'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ECU' },
-                            'Ecuador'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'EGY' },
-                            'Egypt'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SLV' },
-                            'El Salvador'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GNQ' },
-                            'Equatorial Guinea'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ERI' },
-                            'Eritrea'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'EST' },
-                            'Estonia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ETH' },
-                            'Ethiopia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'FLK' },
-                            'Falkland Islands (Malvinas)'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'FRO' },
-                            'Faroe Islands'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'FJI' },
-                            'Fiji'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'FIN' },
-                            'Finland'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'FRA' },
-                            'France'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GUF' },
-                            'French Guiana'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'PYF' },
-                            'French Polynesia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ATF' },
-                            'French Southern Territories'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GAB' },
-                            'Gabon'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GMB' },
-                            'Gambia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GEO' },
-                            'Georgia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'DEU' },
-                            'Germany'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GHA' },
-                            'Ghana'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GIB' },
-                            'Gibraltar'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GRC' },
-                            'Greece'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GRL' },
-                            'Greenland'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GRD' },
-                            'Grenada'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GLP' },
-                            'Guadeloupe'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GUM' },
-                            'Guam'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GTM' },
-                            'Guatemala'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GGY' },
-                            'Guernsey'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GIN' },
-                            'Guinea'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GNB' },
-                            'Guinea-Bissau'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GUY' },
-                            'Guyana'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'HTI' },
-                            'Haiti'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'HMD' },
-                            'Heard Island and McDonald Islands'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'VAT' },
-                            'Holy See (Vatican City State)'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'HND' },
-                            'Honduras'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'HKG' },
-                            'Hong Kong'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'HUN' },
-                            'Hungary'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ISL' },
-                            'Iceland'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'IND' },
-                            'India'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'IDN' },
-                            'Indonesia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'IRN' },
-                            'Iran, Islamic Republic of'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'IRQ' },
-                            'Iraq'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'IRL' },
-                            'Ireland'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'IMN' },
-                            'Isle of Man'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ISR' },
-                            'Israel'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ITA' },
-                            'Italy'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'JAM' },
-                            'Jamaica'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'JPN' },
-                            'Japan'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'JEY' },
-                            'Jersey'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'JOR' },
-                            'Jordan'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'KAZ' },
-                            'Kazakhstan'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'KEN' },
-                            'Kenya'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'KIR' },
-                            'Kiribati'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'PRK' },
-                            'Korea, Democratic People\'s Republic of'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'KOR' },
-                            'Korea, Republic of'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'KWT' },
-                            'Kuwait'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'KGZ' },
-                            'Kyrgyzstan'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'LAO' },
-                            'Lao People\'s Democratic Republic'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'LVA' },
-                            'Latvia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'LBN' },
-                            'Lebanon'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'LSO' },
-                            'Lesotho'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'LBR' },
-                            'Liberia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'LBY' },
-                            'Libya'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'LIE' },
-                            'Liechtenstein'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'LTU' },
-                            'Lithuania'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'LUX' },
-                            'Luxembourg'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MAC' },
-                            'Macao'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MKD' },
-                            'Macedonia, the former Yugoslav Republic of'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MDG' },
-                            'Madagascar'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MWI' },
-                            'Malawi'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MYS' },
-                            'Malaysia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MDV' },
-                            'Maldives'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MLI' },
-                            'Mali'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MLT' },
-                            'Malta'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MHL' },
-                            'Marshall Islands'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MTQ' },
-                            'Martinique'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MRT' },
-                            'Mauritania'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MUS' },
-                            'Mauritius'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MYT' },
-                            'Mayotte'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MEX' },
-                            'Mexico'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'FSM' },
-                            'Micronesia, Federated States of'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MDA' },
-                            'Moldova, Republic of'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MCO' },
-                            'Monaco'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MNG' },
-                            'Mongolia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MNE' },
-                            'Montenegro'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MSR' },
-                            'Montserrat'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MAR' },
-                            'Morocco'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MOZ' },
-                            'Mozambique'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MMR' },
-                            'Myanmar'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NAM' },
-                            'Namibia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NRU' },
-                            'Nauru'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NPL' },
-                            'Nepal'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NLD' },
-                            'Netherlands'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NCL' },
-                            'New Caledonia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NZL' },
-                            'New Zealand'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NIC' },
-                            'Nicaragua'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NER' },
-                            'Niger'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NGA' },
-                            'Nigeria'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NIU' },
-                            'Niue'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NFK' },
-                            'Norfolk Island'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MNP' },
-                            'Northern Mariana Islands'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'NOR' },
-                            'Norway'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'OMN' },
-                            'Oman'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'PAK' },
-                            'Pakistan'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'PLW' },
-                            'Palau'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'PSE' },
-                            'Palestinian Territory, Occupied'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'PAN' },
-                            'Panama'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'PNG' },
-                            'Papua New Guinea'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'PRY' },
-                            'Paraguay'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'PER' },
-                            'Peru'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'PHL' },
-                            'Philippines'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'PCN' },
-                            'Pitcairn'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'POL' },
-                            'Poland'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'PRT' },
-                            'Portugal'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'PRI' },
-                            'Puerto Rico'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'QAT' },
-                            'Qatar'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'REU' },
-                            'R\xE9union'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ROU' },
-                            'Romania'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'RUS' },
-                            'Russian Federation'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'RWA' },
-                            'Rwanda'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'BLM' },
-                            'Saint Barth\xE9lemy'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SHN' },
-                            'Saint Helena, Ascension and Tristan da Cunha'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'KNA' },
-                            'Saint Kitts and Nevis'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'LCA' },
-                            'Saint Lucia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'MAF' },
-                            'Saint Martin (French part)'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SPM' },
-                            'Saint Pierre and Miquelon'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'VCT' },
-                            'Saint Vincent and the Grenadines'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'WSM' },
-                            'Samoa'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SMR' },
-                            'San Marino'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'STP' },
-                            'Sao Tome and Principe'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SAU' },
-                            'Saudi Arabia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SEN' },
-                            'Senegal'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SRB' },
-                            'Serbia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SYC' },
-                            'Seychelles'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SLE' },
-                            'Sierra Leone'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SGP' },
-                            'Singapore'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SXM' },
-                            'Sint Maarten (Dutch part)'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SVK' },
-                            'Slovakia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SVN' },
-                            'Slovenia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SLB' },
-                            'Solomon Islands'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SOM' },
-                            'Somalia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ZAF' },
-                            'South Africa'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SGS' },
-                            'South Georgia and the South Sandwich Islands'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SSD' },
-                            'South Sudan'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ESP' },
-                            'Spain'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'LKA' },
-                            'Sri Lanka'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SDN' },
-                            'Sudan'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SUR' },
-                            'Suriname'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SJM' },
-                            'Svalbard and Jan Mayen'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SWZ' },
-                            'Swaziland'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SWE' },
-                            'Sweden'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'CHE' },
-                            'Switzerland'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'SYR' },
-                            'Syrian Arab Republic'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'TWN' },
-                            'Taiwan'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'TJK' },
-                            'Tajikistan'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'TZA' },
-                            'Tanzania, United Republic of'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'THA' },
-                            'Thailand'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'TLS' },
-                            'Timor-Leste'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'TGO' },
-                            'Togo'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'TKL' },
-                            'Tokelau'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'TON' },
-                            'Tonga'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'TTO' },
-                            'Trinidad and Tobago'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'TUN' },
-                            'Tunisia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'TUR' },
-                            'Turkey'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'TKM' },
-                            'Turkmenistan'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'TCA' },
-                            'Turks and Caicos Islands'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'TUV' },
-                            'Tuvalu'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'UGA' },
-                            'Uganda'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'UKR' },
-                            'Ukraine'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ARE' },
-                            'United Arab Emirates'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'GBR' },
-                            'United Kingdom'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'USA' },
-                            'United States'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'UMI' },
-                            'United States Minor Outlying Islands'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'URY' },
-                            'Uruguay'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'UZB' },
-                            'Uzbekistan'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'VUT' },
-                            'Vanuatu'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'VEN' },
-                            'Venezuela, Bolivarian Republic of'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'VNM' },
-                            'Viet Nam'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'VGB' },
-                            'Virgin Islands, British'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'VIR' },
-                            'Virgin Islands, U.S.'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'WLF' },
-                            'Wallis and Futuna'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ESH' },
-                            'Western Sahara'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'YEM' },
-                            'Yemen'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ZMB' },
-                            'Zambia'
-                        ),
-                        _react2.default.createElement(
-                            'option',
-                            { value: 'ZWE' },
-                            'Zimbabwe'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'button',
-                        { className: 'btn btn-secondary', onClick: this.onBackClickHandler },
-                        'Back'
-                    ),
-                    _react2.default.createElement(
-                        'button',
-                        { className: 'btn btn-success', type: 'submit' },
-                        'Next'
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Location;
-}(_react2.default.Component);
-
-var mapDispatchToProps = {
-    nextPage: _currentPageReducer.nextPage,
-    previousPage: _currentPageReducer.previousPage,
-    putCity: _locationReducer.putCity,
-    putState: _locationReducer.putState,
-    putCountry: _locationReducer.putCountry
-};
-
-exports.default = (0, _reactRedux.connect)(null, mapDispatchToProps)(Location);
-
-/***/ }),
-/* 87 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRedux = __webpack_require__(12);
-
-var _educationReducer = __webpack_require__(193);
-
-var _currentPageReducer = __webpack_require__(21);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Education = function (_React$Component) {
-    _inherits(Education, _React$Component);
-
-    function Education(props) {
-        _classCallCheck(this, Education);
-
-        var _this = _possibleConstructorReturn(this, (Education.__proto__ || Object.getPrototypeOf(Education)).call(this, props));
-
-        _this.submitHandler = _this.submitHandler.bind(_this);
-        _this.onBackClickHandler = _this.onBackClickHandler.bind(_this);
-        return _this;
-    }
-
-    _createClass(Education, [{
-        key: 'submitHandler',
-        value: function submitHandler(event) {
-            event.preventDefault();
-            var target = event.target;
-            this.props.putSchool(target.school1.value);
-            target.school2.value && this.props.putSchool(target.school2.value);
-            this.props.nextPage();
-        }
-    }, {
-        key: 'onBackClickHandler',
-        value: function onBackClickHandler() {
-            this.props.previousPage();
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            console.log(this.props);
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'h3',
-                    null,
-                    'Education'
-                ),
-                _react2.default.createElement(
-                    'form',
-                    { onSubmit: this.submitHandler },
-                    'School 1:',
-                    _react2.default.createElement('input', { name: 'school1', className: 'form-control', type: 'text' }),
-                    'School 2:',
-                    _react2.default.createElement('input', { name: 'school2', className: 'form-control', type: 'text' }),
-                    _react2.default.createElement(
-                        'button',
-                        { onClick: this.onBackClickHandler, className: 'btn btn-secondary' },
-                        'Back'
-                    ),
-                    _react2.default.createElement(
-                        'button',
-                        { className: 'btn btn-success', type: 'submit' },
-                        'Next'
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Education;
-}(_react2.default.Component);
-
-var mapPropsToProps = {
-    putSchool: _educationReducer.putSchool,
-    nextPage: _currentPageReducer.nextPage
-};
-
-exports.default = (0, _reactRedux.connect)(null, mapPropsToProps)(Education);
-
-/***/ }),
-/* 88 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8330,25 +6347,25 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(91);
+var _reactDom = __webpack_require__(86);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactRedux = __webpack_require__(12);
+var _reactRedux = __webpack_require__(11);
 
-var _store = __webpack_require__(126);
+var _store = __webpack_require__(121);
 
 var _store2 = _interopRequireDefault(_store);
 
-__webpack_require__(130);
+__webpack_require__(125);
 
-var _reactRouterDom = __webpack_require__(135);
+var _reactRouterDom = __webpack_require__(130);
 
-var _history = __webpack_require__(69);
+var _history = __webpack_require__(67);
 
 var _history2 = _interopRequireDefault(_history);
 
-var _Main = __webpack_require__(72);
+var _Main = __webpack_require__(70);
 
 var _Main2 = _interopRequireDefault(_Main);
 
@@ -8366,7 +6383,7 @@ _reactDom2.default.render(_react2.default.createElement(
 ), document.getElementById('app'));
 
 /***/ }),
-/* 89 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8379,7 +6396,7 @@ _reactDom2.default.render(_react2.default.createElement(
  * LICENSE file in the root directory of this source tree.
  */
 
-var m=__webpack_require__(10),n=__webpack_require__(16),p=__webpack_require__(7),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
+var m=__webpack_require__(10),n=__webpack_require__(17),p=__webpack_require__(7),q="function"===typeof Symbol&&Symbol["for"],r=q?Symbol["for"]("react.element"):60103,t=q?Symbol["for"]("react.call"):60104,u=q?Symbol["for"]("react.return"):60105,v=q?Symbol["for"]("react.portal"):60106,w=q?Symbol["for"]("react.fragment"):60107,x="function"===typeof Symbol&&Symbol.iterator;
 function y(a){for(var b=arguments.length-1,e="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,c=0;c<b;c++)e+="\x26args[]\x3d"+encodeURIComponent(arguments[c+1]);b=Error(e+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var z={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function A(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}A.prototype.isReactComponent={};A.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?y("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};A.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function B(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}function C(){}C.prototype=A.prototype;var D=B.prototype=new C;D.constructor=B;m(D,A.prototype);D.isPureReactComponent=!0;function E(a,b,e){this.props=a;this.context=b;this.refs=n;this.updater=e||z}var F=E.prototype=new C;F.constructor=E;m(F,A.prototype);F.unstable_isAsyncReactComponent=!0;F.render=function(){return this.props.children};var G={current:null},H=Object.prototype.hasOwnProperty,I={key:!0,ref:!0,__self:!0,__source:!0};
@@ -8394,7 +6411,7 @@ isValidElement:K,version:"16.2.0",__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_F
 
 
 /***/ }),
-/* 90 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8416,9 +6433,9 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var _assign = __webpack_require__(10);
-var emptyObject = __webpack_require__(16);
-var invariant = __webpack_require__(11);
-var warning = __webpack_require__(17);
+var emptyObject = __webpack_require__(17);
+var invariant = __webpack_require__(12);
+var warning = __webpack_require__(18);
 var emptyFunction = __webpack_require__(7);
 var checkPropTypes = __webpack_require__(26);
 
@@ -9759,7 +7776,7 @@ module.exports = react;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 91 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9797,15 +7814,15 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(92);
+  module.exports = __webpack_require__(87);
 } else {
-  module.exports = __webpack_require__(95);
+  module.exports = __webpack_require__(90);
 }
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 92 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9821,7 +7838,7 @@ if (process.env.NODE_ENV === 'production') {
 /*
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(1),l=__webpack_require__(48),B=__webpack_require__(10),C=__webpack_require__(7),ba=__webpack_require__(49),da=__webpack_require__(50),ea=__webpack_require__(51),fa=__webpack_require__(52),ia=__webpack_require__(53),D=__webpack_require__(16);
+var aa=__webpack_require__(1),l=__webpack_require__(48),B=__webpack_require__(10),C=__webpack_require__(7),ba=__webpack_require__(49),da=__webpack_require__(50),ea=__webpack_require__(51),fa=__webpack_require__(52),ia=__webpack_require__(53),D=__webpack_require__(17);
 function E(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:E("227");
 var oa={children:!0,dangerouslySetInnerHTML:!0,defaultValue:!0,defaultChecked:!0,innerHTML:!0,suppressContentEditableWarning:!0,suppressHydrationWarning:!0,style:!0};function pa(a,b){return(a&b)===b}
 var ta={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,HAS_STRING_BOOLEAN_VALUE:64,injectDOMPropertyConfig:function(a){var b=ta,c=a.Properties||{},d=a.DOMAttributeNamespaces||{},e=a.DOMAttributeNames||{};a=a.DOMMutationMethods||{};for(var f in c){ua.hasOwnProperty(f)?E("48",f):void 0;var g=f.toLowerCase(),h=c[f];g={attributeName:g,attributeNamespace:null,propertyName:f,mutationMethod:null,mustUseProperty:pa(h,b.MUST_USE_PROPERTY),
@@ -10041,7 +8058,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
 
 
 /***/ }),
-/* 93 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10056,7 +8073,7 @@ Z.injectIntoDevTools({findFiberByHostInstance:pb,bundleType:0,version:"16.2.0",r
  * @typechecks
  */
 
-var isNode = __webpack_require__(94);
+var isNode = __webpack_require__(89);
 
 /**
  * @param {*} object The object to check.
@@ -10069,7 +8086,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 94 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10097,7 +8114,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 95 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10119,8 +8136,8 @@ if (process.env.NODE_ENV !== "production") {
 'use strict';
 
 var React = __webpack_require__(1);
-var invariant = __webpack_require__(11);
-var warning = __webpack_require__(17);
+var invariant = __webpack_require__(12);
+var warning = __webpack_require__(18);
 var ExecutionEnvironment = __webpack_require__(48);
 var _assign = __webpack_require__(10);
 var emptyFunction = __webpack_require__(7);
@@ -10129,10 +8146,10 @@ var getActiveElement = __webpack_require__(50);
 var shallowEqual = __webpack_require__(51);
 var containsNode = __webpack_require__(52);
 var focusNode = __webpack_require__(53);
-var emptyObject = __webpack_require__(16);
+var emptyObject = __webpack_require__(17);
 var checkPropTypes = __webpack_require__(26);
-var hyphenateStyleName = __webpack_require__(96);
-var camelizeStyleName = __webpack_require__(98);
+var hyphenateStyleName = __webpack_require__(91);
+var camelizeStyleName = __webpack_require__(93);
 
 /**
  * WARNING: DO NOT manually require this module.
@@ -25499,7 +23516,7 @@ module.exports = reactDom;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 96 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25514,7 +23531,7 @@ module.exports = reactDom;
 
 
 
-var hyphenate = __webpack_require__(97);
+var hyphenate = __webpack_require__(92);
 
 var msPattern = /^ms-/;
 
@@ -25541,7 +23558,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 97 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25577,7 +23594,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 98 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25592,7 +23609,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(99);
+var camelize = __webpack_require__(94);
 
 var msPattern = /^-ms-/;
 
@@ -25620,7 +23637,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 99 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25655,7 +23672,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 100 */
+/* 95 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25741,7 +23758,7 @@ function createProvider() {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 101 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25755,8 +23772,8 @@ function createProvider() {
 
 
 var emptyFunction = __webpack_require__(7);
-var invariant = __webpack_require__(11);
-var warning = __webpack_require__(17);
+var invariant = __webpack_require__(12);
+var warning = __webpack_require__(18);
 var assign = __webpack_require__(10);
 
 var ReactPropTypesSecret = __webpack_require__(27);
@@ -26291,7 +24308,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 102 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26305,7 +24322,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 
 var emptyFunction = __webpack_require__(7);
-var invariant = __webpack_require__(11);
+var invariant = __webpack_require__(12);
 var ReactPropTypesSecret = __webpack_require__(27);
 
 module.exports = function() {
@@ -26356,7 +24373,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 103 */
+/* 98 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26455,17 +24472,17 @@ var Subscription = function () {
 
 
 /***/ }),
-/* 104 */
+/* 99 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export createConnect */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_connectAdvanced__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_shallowEqual__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mapDispatchToProps__ = __webpack_require__(106);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mapStateToProps__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mergeProps__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__selectorFactory__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_shallowEqual__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mapDispatchToProps__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mapStateToProps__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__mergeProps__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__selectorFactory__ = __webpack_require__(119);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -26571,7 +24588,7 @@ function createConnect() {
 /* harmony default export */ __webpack_exports__["a"] = (createConnect());
 
 /***/ }),
-/* 105 */
+/* 100 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26608,7 +24625,7 @@ function shallowEqual(objA, objB) {
 }
 
 /***/ }),
-/* 106 */
+/* 101 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26639,13 +24656,13 @@ function whenMapDispatchToPropsIsObject(mapDispatchToProps) {
 /* harmony default export */ __webpack_exports__["a"] = ([whenMapDispatchToPropsIsFunction, whenMapDispatchToPropsIsMissing, whenMapDispatchToPropsIsObject]);
 
 /***/ }),
-/* 107 */
+/* 102 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Symbol_js__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__getRawTag_js__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__objectToString_js__ = __webpack_require__(106);
 
 
 
@@ -26677,11 +24694,11 @@ function baseGetTag(value) {
 
 
 /***/ }),
-/* 108 */
+/* 103 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__ = __webpack_require__(104);
 
 
 /** Detect free variable `self`. */
@@ -26694,7 +24711,7 @@ var root = __WEBPACK_IMPORTED_MODULE_0__freeGlobal_js__["a" /* default */] || fr
 
 
 /***/ }),
-/* 109 */
+/* 104 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26706,7 +24723,7 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(31)))
 
 /***/ }),
-/* 110 */
+/* 105 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26760,7 +24777,7 @@ function getRawTag(value) {
 
 
 /***/ }),
-/* 111 */
+/* 106 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26789,11 +24806,11 @@ function objectToString(value) {
 
 
 /***/ }),
-/* 112 */
+/* 107 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__overArg_js__ = __webpack_require__(108);
 
 
 /** Built-in value references. */
@@ -26803,7 +24820,7 @@ var getPrototype = Object(__WEBPACK_IMPORTED_MODULE_0__overArg_js__["a" /* defau
 
 
 /***/ }),
-/* 113 */
+/* 108 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26825,7 +24842,7 @@ function overArg(func, transform) {
 
 
 /***/ }),
-/* 114 */
+/* 109 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -26861,14 +24878,14 @@ function isObjectLike(value) {
 
 
 /***/ }),
-/* 115 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(116);
+module.exports = __webpack_require__(111);
 
 
 /***/ }),
-/* 116 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26878,7 +24895,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ponyfill = __webpack_require__(118);
+var _ponyfill = __webpack_require__(113);
 
 var _ponyfill2 = _interopRequireDefault(_ponyfill);
 
@@ -26901,10 +24918,10 @@ if (typeof self !== 'undefined') {
 
 var result = (0, _ponyfill2['default'])(root);
 exports['default'] = result;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(31), __webpack_require__(117)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(31), __webpack_require__(112)(module)))
 
 /***/ }),
-/* 117 */
+/* 112 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -26932,7 +24949,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 118 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26961,7 +24978,7 @@ function symbolObservablePonyfill(root) {
 };
 
 /***/ }),
-/* 119 */
+/* 114 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -27102,7 +25119,7 @@ function combineReducers(reducers) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 120 */
+/* 115 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -27156,7 +25173,7 @@ function bindActionCreators(actionCreators, dispatch) {
 }
 
 /***/ }),
-/* 121 */
+/* 116 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -27212,7 +25229,7 @@ function applyMiddleware() {
 }
 
 /***/ }),
-/* 122 */
+/* 117 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -27234,7 +25251,7 @@ function whenMapStateToPropsIsMissing(mapStateToProps) {
 /* harmony default export */ __webpack_exports__["a"] = ([whenMapStateToPropsIsFunction, whenMapStateToPropsIsMissing]);
 
 /***/ }),
-/* 123 */
+/* 118 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -27291,14 +25308,14 @@ function whenMergePropsIsOmitted(mergeProps) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 124 */
+/* 119 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* unused harmony export impureFinalPropsSelectorFactory */
 /* unused harmony export pureFinalPropsSelectorFactory */
 /* harmony export (immutable) */ __webpack_exports__["a"] = finalPropsSelectorFactory;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__verifySubselectors__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__verifySubselectors__ = __webpack_require__(120);
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
 
@@ -27404,7 +25421,7 @@ function finalPropsSelectorFactory(dispatch, _ref2) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 125 */
+/* 120 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -27429,7 +25446,7 @@ function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, dis
 }
 
 /***/ }),
-/* 126 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27441,15 +25458,15 @@ Object.defineProperty(exports, "__esModule", {
 
 var _redux = __webpack_require__(29);
 
-var _index = __webpack_require__(127);
+var _index = __webpack_require__(122);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _reduxThunk = __webpack_require__(128);
+var _reduxThunk = __webpack_require__(123);
 
 var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
-var _reduxLogger = __webpack_require__(129);
+var _reduxLogger = __webpack_require__(124);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27458,7 +25475,7 @@ var store = (0, _redux.createStore)(_index2.default, (0, _redux.applyMiddleware)
 exports.default = store;
 
 /***/ }),
-/* 127 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27470,33 +25487,23 @@ Object.defineProperty(exports, "__esModule", {
 
 var _redux = __webpack_require__(29);
 
-var _basicInfoReducer = __webpack_require__(63);
-
-var _basicInfoReducer2 = _interopRequireDefault(_basicInfoReducer);
-
-var _currentPageReducer = __webpack_require__(21);
+var _currentPageReducer = __webpack_require__(13);
 
 var _currentPageReducer2 = _interopRequireDefault(_currentPageReducer);
 
-var _locationReducer = __webpack_require__(64);
+var _infoReducer = __webpack_require__(22);
 
-var _locationReducer2 = _interopRequireDefault(_locationReducer);
-
-var _educationReducer = __webpack_require__(193);
-
-var _educationReducer2 = _interopRequireDefault(_educationReducer);
+var _infoReducer2 = _interopRequireDefault(_infoReducer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = (0, _redux.combineReducers)({
-  basicInfo: _basicInfoReducer2.default,
   currentPage: _currentPageReducer2.default,
-  location: _locationReducer2.default,
-  education: _educationReducer2.default
+  info: _infoReducer2.default
 });
 
 /***/ }),
-/* 128 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27525,7 +25532,7 @@ thunk.withExtraArgument = createThunkMiddleware;
 exports['default'] = thunk;
 
 /***/ }),
-/* 129 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {!function(e,t){ true?t(exports):"function"==typeof define&&define.amd?define(["exports"],t):t(e.reduxLogger=e.reduxLogger||{})}(this,function(e){"use strict";function t(e,t){e.super_=t,e.prototype=Object.create(t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}})}function r(e,t){Object.defineProperty(this,"kind",{value:e,enumerable:!0}),t&&t.length&&Object.defineProperty(this,"path",{value:t,enumerable:!0})}function n(e,t,r){n.super_.call(this,"E",e),Object.defineProperty(this,"lhs",{value:t,enumerable:!0}),Object.defineProperty(this,"rhs",{value:r,enumerable:!0})}function o(e,t){o.super_.call(this,"N",e),Object.defineProperty(this,"rhs",{value:t,enumerable:!0})}function i(e,t){i.super_.call(this,"D",e),Object.defineProperty(this,"lhs",{value:t,enumerable:!0})}function a(e,t,r){a.super_.call(this,"A",e),Object.defineProperty(this,"index",{value:t,enumerable:!0}),Object.defineProperty(this,"item",{value:r,enumerable:!0})}function f(e,t,r){var n=e.slice((r||t)+1||e.length);return e.length=t<0?e.length+t:t,e.push.apply(e,n),e}function u(e){var t="undefined"==typeof e?"undefined":N(e);return"object"!==t?t:e===Math?"math":null===e?"null":Array.isArray(e)?"array":"[object Date]"===Object.prototype.toString.call(e)?"date":"function"==typeof e.toString&&/^\/.*\//.test(e.toString())?"regexp":"object"}function l(e,t,r,c,s,d,p){s=s||[],p=p||[];var g=s.slice(0);if("undefined"!=typeof d){if(c){if("function"==typeof c&&c(g,d))return;if("object"===("undefined"==typeof c?"undefined":N(c))){if(c.prefilter&&c.prefilter(g,d))return;if(c.normalize){var h=c.normalize(g,d,e,t);h&&(e=h[0],t=h[1])}}}g.push(d)}"regexp"===u(e)&&"regexp"===u(t)&&(e=e.toString(),t=t.toString());var y="undefined"==typeof e?"undefined":N(e),v="undefined"==typeof t?"undefined":N(t),b="undefined"!==y||p&&p[p.length-1].lhs&&p[p.length-1].lhs.hasOwnProperty(d),m="undefined"!==v||p&&p[p.length-1].rhs&&p[p.length-1].rhs.hasOwnProperty(d);if(!b&&m)r(new o(g,t));else if(!m&&b)r(new i(g,e));else if(u(e)!==u(t))r(new n(g,e,t));else if("date"===u(e)&&e-t!==0)r(new n(g,e,t));else if("object"===y&&null!==e&&null!==t)if(p.filter(function(t){return t.lhs===e}).length)e!==t&&r(new n(g,e,t));else{if(p.push({lhs:e,rhs:t}),Array.isArray(e)){var w;e.length;for(w=0;w<e.length;w++)w>=t.length?r(new a(g,w,new i(void 0,e[w]))):l(e[w],t[w],r,c,g,w,p);for(;w<t.length;)r(new a(g,w,new o(void 0,t[w++])))}else{var x=Object.keys(e),S=Object.keys(t);x.forEach(function(n,o){var i=S.indexOf(n);i>=0?(l(e[n],t[n],r,c,g,n,p),S=f(S,i)):l(e[n],void 0,r,c,g,n,p)}),S.forEach(function(e){l(void 0,t[e],r,c,g,e,p)})}p.length=p.length-1}else e!==t&&("number"===y&&isNaN(e)&&isNaN(t)||r(new n(g,e,t)))}function c(e,t,r,n){return n=n||[],l(e,t,function(e){e&&n.push(e)},r),n.length?n:void 0}function s(e,t,r){if(r.path&&r.path.length){var n,o=e[t],i=r.path.length-1;for(n=0;n<i;n++)o=o[r.path[n]];switch(r.kind){case"A":s(o[r.path[n]],r.index,r.item);break;case"D":delete o[r.path[n]];break;case"E":case"N":o[r.path[n]]=r.rhs}}else switch(r.kind){case"A":s(e[t],r.index,r.item);break;case"D":e=f(e,t);break;case"E":case"N":e[t]=r.rhs}return e}function d(e,t,r){if(e&&t&&r&&r.kind){for(var n=e,o=-1,i=r.path?r.path.length-1:0;++o<i;)"undefined"==typeof n[r.path[o]]&&(n[r.path[o]]="number"==typeof r.path[o]?[]:{}),n=n[r.path[o]];switch(r.kind){case"A":s(r.path?n[r.path[o]]:n,r.index,r.item);break;case"D":delete n[r.path[o]];break;case"E":case"N":n[r.path[o]]=r.rhs}}}function p(e,t,r){if(r.path&&r.path.length){var n,o=e[t],i=r.path.length-1;for(n=0;n<i;n++)o=o[r.path[n]];switch(r.kind){case"A":p(o[r.path[n]],r.index,r.item);break;case"D":o[r.path[n]]=r.lhs;break;case"E":o[r.path[n]]=r.lhs;break;case"N":delete o[r.path[n]]}}else switch(r.kind){case"A":p(e[t],r.index,r.item);break;case"D":e[t]=r.lhs;break;case"E":e[t]=r.lhs;break;case"N":e=f(e,t)}return e}function g(e,t,r){if(e&&t&&r&&r.kind){var n,o,i=e;for(o=r.path.length-1,n=0;n<o;n++)"undefined"==typeof i[r.path[n]]&&(i[r.path[n]]={}),i=i[r.path[n]];switch(r.kind){case"A":p(i[r.path[n]],r.index,r.item);break;case"D":i[r.path[n]]=r.lhs;break;case"E":i[r.path[n]]=r.lhs;break;case"N":delete i[r.path[n]]}}}function h(e,t,r){if(e&&t){var n=function(n){r&&!r(e,t,n)||d(e,t,n)};l(e,t,n)}}function y(e){return"color: "+F[e].color+"; font-weight: bold"}function v(e){var t=e.kind,r=e.path,n=e.lhs,o=e.rhs,i=e.index,a=e.item;switch(t){case"E":return[r.join("."),n,"→",o];case"N":return[r.join("."),o];case"D":return[r.join(".")];case"A":return[r.join(".")+"["+i+"]",a];default:return[]}}function b(e,t,r,n){var o=c(e,t);try{n?r.groupCollapsed("diff"):r.group("diff")}catch(e){r.log("diff")}o?o.forEach(function(e){var t=e.kind,n=v(e);r.log.apply(r,["%c "+F[t].text,y(t)].concat(P(n)))}):r.log("—— no diff ——");try{r.groupEnd()}catch(e){r.log("—— diff end —— ")}}function m(e,t,r,n){switch("undefined"==typeof e?"undefined":N(e)){case"object":return"function"==typeof e[n]?e[n].apply(e,P(r)):e[n];case"function":return e(t);default:return e}}function w(e){var t=e.timestamp,r=e.duration;return function(e,n,o){var i=["action"];return i.push("%c"+String(e.type)),t&&i.push("%c@ "+n),r&&i.push("%c(in "+o.toFixed(2)+" ms)"),i.join(" ")}}function x(e,t){var r=t.logger,n=t.actionTransformer,o=t.titleFormatter,i=void 0===o?w(t):o,a=t.collapsed,f=t.colors,u=t.level,l=t.diff,c="undefined"==typeof t.titleFormatter;e.forEach(function(o,s){var d=o.started,p=o.startedTime,g=o.action,h=o.prevState,y=o.error,v=o.took,w=o.nextState,x=e[s+1];x&&(w=x.prevState,v=x.started-d);var S=n(g),k="function"==typeof a?a(function(){return w},g,o):a,j=D(p),E=f.title?"color: "+f.title(S)+";":"",A=["color: gray; font-weight: lighter;"];A.push(E),t.timestamp&&A.push("color: gray; font-weight: lighter;"),t.duration&&A.push("color: gray; font-weight: lighter;");var O=i(S,j,v);try{k?f.title&&c?r.groupCollapsed.apply(r,["%c "+O].concat(A)):r.groupCollapsed(O):f.title&&c?r.group.apply(r,["%c "+O].concat(A)):r.group(O)}catch(e){r.log(O)}var N=m(u,S,[h],"prevState"),P=m(u,S,[S],"action"),C=m(u,S,[y,h],"error"),F=m(u,S,[w],"nextState");if(N)if(f.prevState){var L="color: "+f.prevState(h)+"; font-weight: bold";r[N]("%c prev state",L,h)}else r[N]("prev state",h);if(P)if(f.action){var T="color: "+f.action(S)+"; font-weight: bold";r[P]("%c action    ",T,S)}else r[P]("action    ",S);if(y&&C)if(f.error){var M="color: "+f.error(y,h)+"; font-weight: bold;";r[C]("%c error     ",M,y)}else r[C]("error     ",y);if(F)if(f.nextState){var _="color: "+f.nextState(w)+"; font-weight: bold";r[F]("%c next state",_,w)}else r[F]("next state",w);l&&b(h,w,r,k);try{r.groupEnd()}catch(e){r.log("—— log end ——")}})}function S(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},t=Object.assign({},L,e),r=t.logger,n=t.stateTransformer,o=t.errorTransformer,i=t.predicate,a=t.logErrors,f=t.diffPredicate;if("undefined"==typeof r)return function(){return function(e){return function(t){return e(t)}}};if(e.getState&&e.dispatch)return console.error("[redux-logger] redux-logger not installed. Make sure to pass logger instance as middleware:\n// Logger with default options\nimport { logger } from 'redux-logger'\nconst store = createStore(\n  reducer,\n  applyMiddleware(logger)\n)\n// Or you can create your own logger with custom options http://bit.ly/redux-logger-options\nimport createLogger from 'redux-logger'\nconst logger = createLogger({\n  // ...options\n});\nconst store = createStore(\n  reducer,\n  applyMiddleware(logger)\n)\n"),function(){return function(e){return function(t){return e(t)}}};var u=[];return function(e){var r=e.getState;return function(e){return function(l){if("function"==typeof i&&!i(r,l))return e(l);var c={};u.push(c),c.started=O.now(),c.startedTime=new Date,c.prevState=n(r()),c.action=l;var s=void 0;if(a)try{s=e(l)}catch(e){c.error=o(e)}else s=e(l);c.took=O.now()-c.started,c.nextState=n(r());var d=t.diff&&"function"==typeof f?f(r,l):t.diff;if(x(u,Object.assign({},t,{diff:d})),u.length=0,c.error)throw c.error;return s}}}}var k,j,E=function(e,t){return new Array(t+1).join(e)},A=function(e,t){return E("0",t-e.toString().length)+e},D=function(e){return A(e.getHours(),2)+":"+A(e.getMinutes(),2)+":"+A(e.getSeconds(),2)+"."+A(e.getMilliseconds(),3)},O="undefined"!=typeof performance&&null!==performance&&"function"==typeof performance.now?performance:Date,N="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},P=function(e){if(Array.isArray(e)){for(var t=0,r=Array(e.length);t<e.length;t++)r[t]=e[t];return r}return Array.from(e)},C=[];k="object"===("undefined"==typeof global?"undefined":N(global))&&global?global:"undefined"!=typeof window?window:{},j=k.DeepDiff,j&&C.push(function(){"undefined"!=typeof j&&k.DeepDiff===c&&(k.DeepDiff=j,j=void 0)}),t(n,r),t(o,r),t(i,r),t(a,r),Object.defineProperties(c,{diff:{value:c,enumerable:!0},observableDiff:{value:l,enumerable:!0},applyDiff:{value:h,enumerable:!0},applyChange:{value:d,enumerable:!0},revertChange:{value:g,enumerable:!0},isConflict:{value:function(){return"undefined"!=typeof j},enumerable:!0},noConflict:{value:function(){return C&&(C.forEach(function(e){e()}),C=null),c},enumerable:!0}});var F={E:{color:"#2196F3",text:"CHANGED:"},N:{color:"#4CAF50",text:"ADDED:"},D:{color:"#F44336",text:"DELETED:"},A:{color:"#2196F3",text:"ARRAY:"}},L={level:"log",logger:console,logErrors:!0,collapsed:void 0,predicate:void 0,duration:!1,timestamp:!0,stateTransformer:function(e){return e},actionTransformer:function(e){return e},errorTransformer:function(e){return e},colors:{title:function(){return"inherit"},prevState:function(){return"#9E9E9E"},action:function(){return"#03A9F4"},nextState:function(){return"#4CAF50"},error:function(){return"#F20404"}},diff:!1,diffPredicate:void 0,transformer:void 0},T=function(){var e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},t=e.dispatch,r=e.getState;return"function"==typeof t||"function"==typeof r?S()({dispatch:t,getState:r}):void console.error("\n[redux-logger v3] BREAKING CHANGE\n[redux-logger v3] Since 3.0.0 redux-logger exports by default logger with default settings.\n[redux-logger v3] Change\n[redux-logger v3] import createLogger from 'redux-logger'\n[redux-logger v3] to\n[redux-logger v3] import { createLogger } from 'redux-logger'\n")};e.defaults=L,e.createLogger=S,e.logger=T,e.default=T,Object.defineProperty(e,"__esModule",{value:!0})});
@@ -27533,13 +25540,13 @@ exports['default'] = thunk;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(31)))
 
 /***/ }),
-/* 130 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(131);
+var content = __webpack_require__(126);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -27547,7 +25554,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(133)(content, options);
+var update = __webpack_require__(128)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -27564,21 +25571,21 @@ if(false) {
 }
 
 /***/ }),
-/* 131 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(132)(undefined);
+exports = module.exports = __webpack_require__(127)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "html, body {\n    margin: 0\n}\n\nbody {\n    padding: 30px; \n}\n\n#main-container {\n    width: 70%;\n        margin: 25px auto;\n\n}\n\n#main-title {\n    margin: 25px auto;\n    width: 50%;\n    border: 3px solid lightseagreen;\n    border-radius: 15px;\n    padding: 10px;\n    text-align: center;\n    font-weight: 600;\n}\n\nbutton {\n    margin: 20px;\n}\n\nselect, input {\n    width: 100%;\n    padding: 50px;\n    margin-bottom: 3%\n}\n", ""]);
+exports.push([module.i, "html, body {\n    margin: 0\n}\n\nbody {\n    padding: 30px; \n}\n\n#main-container {\n    width: 70%;\n        margin: 25px auto;\n\n}\n\n#main-title {\n    margin: 25px auto;\n    width: 50%;\n    border: 3px solid lightseagreen;\n    border-radius: 15px;\n    padding: 10px;\n    text-align: center;\n    font-weight: 600;\n}\n\nbutton {\n    margin-top: 10px;\n    width: 100%;\n}\n\n.summary-button {\n    width: 2.8em;\n}\n\nselect, input {\n    width: 100%;\n    padding: 50px;\n    margin-bottom: 3%\n}\n\n.required:before { \n    content:\" *\"; \n    color: red;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 132 */
+/* 127 */
 /***/ (function(module, exports) {
 
 /*
@@ -27660,7 +25667,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 133 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -27716,7 +25723,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(134);
+var	fixUrls = __webpack_require__(129);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -28032,7 +26039,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 134 */
+/* 129 */
 /***/ (function(module, exports) {
 
 
@@ -28127,36 +26134,36 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 135 */
+/* 130 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__ = __webpack_require__(131);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "BrowserRouter", function() { return __WEBPACK_IMPORTED_MODULE_0__BrowserRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__HashRouter__ = __webpack_require__(146);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "HashRouter", function() { return __WEBPACK_IMPORTED_MODULE_1__HashRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(66);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Link", function() { return __WEBPACK_IMPORTED_MODULE_2__Link__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__ = __webpack_require__(148);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "MemoryRouter", function() { return __WEBPACK_IMPORTED_MODULE_3__MemoryRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__NavLink__ = __webpack_require__(149);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "NavLink", function() { return __WEBPACK_IMPORTED_MODULE_4__NavLink__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(155);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Prompt__ = __webpack_require__(150);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Prompt", function() { return __WEBPACK_IMPORTED_MODULE_5__Prompt__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Redirect__ = __webpack_require__(151);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Redirect", function() { return __WEBPACK_IMPORTED_MODULE_6__Redirect__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(157);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Route__ = __webpack_require__(152);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Route", function() { return __WEBPACK_IMPORTED_MODULE_7__Route__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__Router__ = __webpack_require__(153);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Router", function() { return __WEBPACK_IMPORTED_MODULE_8__Router__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__StaticRouter__ = __webpack_require__(154);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "StaticRouter", function() { return __WEBPACK_IMPORTED_MODULE_9__StaticRouter__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Switch__ = __webpack_require__(155);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return __WEBPACK_IMPORTED_MODULE_10__Switch__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(161);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__matchPath__ = __webpack_require__(156);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "matchPath", function() { return __WEBPACK_IMPORTED_MODULE_11__matchPath__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(162);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__withRouter__ = __webpack_require__(157);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "withRouter", function() { return __WEBPACK_IMPORTED_MODULE_12__withRouter__["a"]; });
 
 
@@ -28186,7 +26193,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 136 */
+/* 131 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28194,7 +26201,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createBrowserHistory__ = __webpack_require__(137);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createBrowserHistory__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createBrowserHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_history_createBrowserHistory__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_router__ = __webpack_require__(5);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -28246,7 +26253,7 @@ BrowserRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (BrowserRouter);
 
 /***/ }),
-/* 137 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28268,13 +26275,13 @@ var _invariant2 = _interopRequireDefault(_invariant);
 
 var _LocationUtils = __webpack_require__(32);
 
-var _PathUtils = __webpack_require__(18);
+var _PathUtils = __webpack_require__(19);
 
 var _createTransitionManager = __webpack_require__(35);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
-var _DOMUtils = __webpack_require__(65);
+var _DOMUtils = __webpack_require__(63);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28559,7 +26566,7 @@ var createBrowserHistory = function createBrowserHistory() {
 exports.default = createBrowserHistory;
 
 /***/ }),
-/* 138 */
+/* 133 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28569,7 +26576,7 @@ exports.default = createBrowserHistory;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory__ = __webpack_require__(134);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history_createMemoryHistory__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(36);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -28626,7 +26633,7 @@ MemoryRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (MemoryRouter);
 
 /***/ }),
-/* 139 */
+/* 134 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28642,7 +26649,7 @@ var _warning = __webpack_require__(3);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _PathUtils = __webpack_require__(18);
+var _PathUtils = __webpack_require__(19);
 
 var _LocationUtils = __webpack_require__(32);
 
@@ -28802,7 +26809,7 @@ var createMemoryHistory = function createMemoryHistory() {
 exports.default = createMemoryHistory;
 
 /***/ }),
-/* 140 */
+/* 135 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28893,7 +26900,7 @@ Prompt.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Prompt);
 
 /***/ }),
-/* 141 */
+/* 136 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -28905,7 +26912,7 @@ Prompt.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history__ = __webpack_require__(137);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -29001,20 +27008,20 @@ Redirect.contextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Redirect);
 
 /***/ }),
-/* 142 */
+/* 137 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__ = __webpack_require__(143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__createBrowserHistory__ = __webpack_require__(138);
 /* unused harmony reexport createBrowserHistory */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createHashHistory__ = __webpack_require__(144);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createHashHistory__ = __webpack_require__(139);
 /* unused harmony reexport createHashHistory */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(145);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(140);
 /* unused harmony reexport createMemoryHistory */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__LocationUtils__ = __webpack_require__(23);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_3__LocationUtils__["b"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PathUtils__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__PathUtils__ = __webpack_require__(20);
 /* unused harmony reexport parsePath */
 /* unused harmony reexport createPath */
 
@@ -29028,7 +27035,7 @@ Redirect.contextTypes = {
 
 
 /***/ }),
-/* 143 */
+/* 138 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29036,10 +27043,10 @@ Redirect.contextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(64);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -29332,7 +27339,7 @@ var createBrowserHistory = function createBrowserHistory() {
 /* unused harmony default export */ var _unused_webpack_default_export = (createBrowserHistory);
 
 /***/ }),
-/* 144 */
+/* 139 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29340,10 +27347,10 @@ var createBrowserHistory = function createBrowserHistory() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(22);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__PathUtils__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(66);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__DOMUtils__ = __webpack_require__(64);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -29653,14 +27660,14 @@ var createHashHistory = function createHashHistory() {
 /* unused harmony default export */ var _unused_webpack_default_export = (createHashHistory);
 
 /***/ }),
-/* 145 */
+/* 140 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PathUtils__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__LocationUtils__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(37);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -29821,10 +27828,10 @@ var createMemoryHistory = function createMemoryHistory() {
 /* unused harmony default export */ var _unused_webpack_default_export = (createMemoryHistory);
 
 /***/ }),
-/* 146 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isarray = __webpack_require__(147)
+var isarray = __webpack_require__(142)
 
 /**
  * Expose `pathToRegexp`.
@@ -30253,7 +28260,7 @@ function pathToRegexp (path, keys, options) {
 
 
 /***/ }),
-/* 147 */
+/* 142 */
 /***/ (function(module, exports) {
 
 module.exports = Array.isArray || function (arr) {
@@ -30262,7 +28269,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 148 */
+/* 143 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30274,7 +28281,7 @@ module.exports = Array.isArray || function (arr) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history_PathUtils__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history_PathUtils__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_history_PathUtils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_history_PathUtils__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Router__ = __webpack_require__(36);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -30445,7 +28452,7 @@ StaticRouter.childContextTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (StaticRouter);
 
 /***/ }),
-/* 149 */
+/* 144 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30539,7 +28546,7 @@ Switch.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (Switch);
 
 /***/ }),
-/* 150 */
+/* 145 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30549,7 +28556,7 @@ Switch.propTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_hoist_non_react_statics__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Route__ = __webpack_require__(65);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -30584,7 +28591,7 @@ var withRouter = function withRouter(Component) {
 /* harmony default export */ __webpack_exports__["a"] = (withRouter);
 
 /***/ }),
-/* 151 */
+/* 146 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30592,7 +28599,7 @@ var withRouter = function withRouter(Component) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createHashHistory__ = __webpack_require__(152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createHashHistory__ = __webpack_require__(147);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createHashHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_history_createHashHistory__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_router__ = __webpack_require__(5);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -30643,7 +28650,7 @@ HashRouter.propTypes = {
 /* harmony default export */ __webpack_exports__["a"] = (HashRouter);
 
 /***/ }),
-/* 152 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -30663,13 +28670,13 @@ var _invariant2 = _interopRequireDefault(_invariant);
 
 var _LocationUtils = __webpack_require__(32);
 
-var _PathUtils = __webpack_require__(18);
+var _PathUtils = __webpack_require__(19);
 
 var _createTransitionManager = __webpack_require__(35);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
-var _DOMUtils = __webpack_require__(65);
+var _DOMUtils = __webpack_require__(63);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30973,7 +28980,7 @@ var createHashHistory = function createHashHistory() {
 exports.default = createHashHistory;
 
 /***/ }),
-/* 153 */
+/* 148 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30982,7 +28989,7 @@ exports.default = createHashHistory;
 
 
 /***/ }),
-/* 154 */
+/* 149 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -30991,7 +28998,7 @@ exports.default = createHashHistory;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(66);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -31059,7 +29066,7 @@ NavLink.defaultProps = {
 /* harmony default export */ __webpack_exports__["a"] = (NavLink);
 
 /***/ }),
-/* 155 */
+/* 150 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31068,7 +29075,7 @@ NavLink.defaultProps = {
 
 
 /***/ }),
-/* 156 */
+/* 151 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31077,7 +29084,7 @@ NavLink.defaultProps = {
 
 
 /***/ }),
-/* 157 */
+/* 152 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31086,7 +29093,7 @@ NavLink.defaultProps = {
 
 
 /***/ }),
-/* 158 */
+/* 153 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31095,7 +29102,7 @@ NavLink.defaultProps = {
 
 
 /***/ }),
-/* 159 */
+/* 154 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31104,7 +29111,7 @@ NavLink.defaultProps = {
 
 
 /***/ }),
-/* 160 */
+/* 155 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31113,7 +29120,7 @@ NavLink.defaultProps = {
 
 
 /***/ }),
-/* 161 */
+/* 156 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31122,7 +29129,7 @@ NavLink.defaultProps = {
 
 
 /***/ }),
-/* 162 */
+/* 157 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31131,7 +29138,7 @@ NavLink.defaultProps = {
 
 
 /***/ }),
-/* 163 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31151,15 +29158,15 @@ var _invariant = __webpack_require__(2);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _LocationUtils = __webpack_require__(70);
+var _LocationUtils = __webpack_require__(68);
 
 var _PathUtils = __webpack_require__(39);
 
-var _createTransitionManager = __webpack_require__(71);
+var _createTransitionManager = __webpack_require__(69);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
-var _DOMUtils = __webpack_require__(164);
+var _DOMUtils = __webpack_require__(159);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31444,7 +29451,7 @@ var createBrowserHistory = function createBrowserHistory() {
 exports.default = createBrowserHistory;
 
 /***/ }),
-/* 164 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31505,7 +29512,7 @@ var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isE
 };
 
 /***/ }),
-/* 165 */
+/* 160 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31523,9 +29530,9 @@ var _warning2 = _interopRequireDefault(_warning);
 
 var _PathUtils = __webpack_require__(39);
 
-var _LocationUtils = __webpack_require__(70);
+var _LocationUtils = __webpack_require__(68);
 
-var _createTransitionManager = __webpack_require__(71);
+var _createTransitionManager = __webpack_require__(69);
 
 var _createTransitionManager2 = _interopRequireDefault(_createTransitionManager);
 
@@ -31681,7 +29688,79 @@ var createMemoryHistory = function createMemoryHistory() {
 exports.default = createMemoryHistory;
 
 /***/ }),
-/* 166 */
+/* 161 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(71);
+
+var _reactRedux = __webpack_require__(11);
+
+var _currentPageReducer = __webpack_require__(13);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Begin = function (_React$Component) {
+    _inherits(Begin, _React$Component);
+
+    function Begin(props) {
+        _classCallCheck(this, Begin);
+
+        var _this = _possibleConstructorReturn(this, (Begin.__proto__ || Object.getPrototypeOf(Begin)).call(this, props));
+
+        _this.clickHandler = _this.clickHandler.bind(_this);
+        return _this;
+    }
+
+    _createClass(Begin, [{
+        key: 'clickHandler',
+        value: function clickHandler() {
+            this.props.basicPage();
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'button',
+                    { onClick: this.clickHandler, className: 'btn btn-info' },
+                    'Start'
+                )
+            );
+        }
+    }]);
+
+    return Begin;
+}(_react2.default.Component);
+
+var mapDispatchToProps = {
+    basicPage: _currentPageReducer.basicPage
+};
+
+exports.default = (0, _reactRedux.connect)(null, mapDispatchToProps)(Begin);
+
+/***/ }),
+/* 162 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -31693,12 +29772,12 @@ exports.default = createMemoryHistory;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_create_react_class___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_create_react_class__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__InternalPropTypes__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__createTransitionManager__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__InternalPropTypes__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__RouterContext__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__RouteUtils__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__RouterUtils__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__routerWarning__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__RouterUtils__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__routerWarning__ = __webpack_require__(14);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -31851,7 +29930,7 @@ var propTypes = {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 167 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31867,11 +29946,11 @@ var propTypes = {
 
 var _assign = __webpack_require__(10);
 
-var emptyObject = __webpack_require__(16);
-var _invariant = __webpack_require__(11);
+var emptyObject = __webpack_require__(17);
+var _invariant = __webpack_require__(12);
 
 if (process.env.NODE_ENV !== 'production') {
-  var warning = __webpack_require__(17);
+  var warning = __webpack_require__(18);
 }
 
 var MIXINS_KEY = 'mixins';
@@ -32729,11 +30808,11 @@ module.exports = factory;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 168 */
+/* 164 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__PatternUtils__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__PatternUtils__ = __webpack_require__(15);
 
 
 function routeParamsChanged(route, prevState, nextState) {
@@ -32806,7 +30885,7 @@ function computeChangedRoutes(prevState, nextState) {
 /* harmony default export */ __webpack_exports__["a"] = (computeChangedRoutes);
 
 /***/ }),
-/* 169 */
+/* 165 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -32970,12 +31049,12 @@ function getTransitionUtils() {
 }
 
 /***/ }),
-/* 170 */
+/* 166 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = isActive;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__PatternUtils__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__PatternUtils__ = __webpack_require__(15);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 
@@ -33123,12 +31202,12 @@ function isActive(_ref, indexOnly, currentLocation, routes, params) {
 }
 
 /***/ }),
-/* 171 */
+/* 167 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__AsyncUtils__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PromiseUtils__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PromiseUtils__ = __webpack_require__(73);
 
 
 
@@ -33165,15 +31244,15 @@ function getComponents(nextState, callback) {
 /* harmony default export */ __webpack_exports__["a"] = (getComponents);
 
 /***/ }),
-/* 172 */
+/* 168 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony export (immutable) */ __webpack_exports__["a"] = matchRoutes;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__AsyncUtils__ = __webpack_require__(40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PromiseUtils__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PatternUtils__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__routerWarning__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__PromiseUtils__ = __webpack_require__(73);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__PatternUtils__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__routerWarning__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RouteUtils__ = __webpack_require__(8);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -33418,11 +31497,11 @@ function matchRoutes(routes, location, callback, remainingPathname) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 173 */
+/* 169 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__PatternUtils__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__PatternUtils__ = __webpack_require__(15);
 
 
 /**
@@ -33446,7 +31525,7 @@ function getRouteParams(route, params) {
 /* harmony default export */ __webpack_exports__["a"] = (getRouteParams);
 
 /***/ }),
-/* 174 */
+/* 170 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33454,7 +31533,7 @@ function getRouteParams(route, params) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_create_react_class__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_create_react_class___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_create_react_class__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Link__ = __webpack_require__(75);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -33475,7 +31554,7 @@ var IndexLink = __WEBPACK_IMPORTED_MODULE_1_create_react_class___default()({
 /* harmony default export */ __webpack_exports__["a"] = (IndexLink);
 
 /***/ }),
-/* 175 */
+/* 171 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33486,7 +31565,7 @@ var IndexLink = __WEBPACK_IMPORTED_MODULE_1_create_react_class___default()({
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_create_react_class__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_create_react_class___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_create_react_class__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_hoist_non_react_statics__ = __webpack_require__(176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_hoist_non_react_statics__ = __webpack_require__(172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_hoist_non_react_statics__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ContextUtils__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__PropTypes__ = __webpack_require__(43);
@@ -33551,7 +31630,7 @@ function withRouter(WrappedComponent, options) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 176 */
+/* 172 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33608,7 +31687,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 
 
 /***/ }),
-/* 177 */
+/* 173 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33616,11 +31695,11 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_create_react_class___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_create_react_class__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routerWarning__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routerWarning__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Redirect__ = __webpack_require__(78);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__InternalPropTypes__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Redirect__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__InternalPropTypes__ = __webpack_require__(21);
 
 
 
@@ -33664,7 +31743,7 @@ var IndexRedirect = __WEBPACK_IMPORTED_MODULE_0_create_react_class___default()({
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 178 */
+/* 174 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33672,11 +31751,11 @@ var IndexRedirect = __WEBPACK_IMPORTED_MODULE_0_create_react_class___default()({
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_create_react_class___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_create_react_class__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routerWarning__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routerWarning__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RouteUtils__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__InternalPropTypes__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__InternalPropTypes__ = __webpack_require__(21);
 
 
 
@@ -33721,7 +31800,7 @@ var IndexRoute = __WEBPACK_IMPORTED_MODULE_0_create_react_class___default()({
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 179 */
+/* 175 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33732,7 +31811,7 @@ var IndexRoute = __WEBPACK_IMPORTED_MODULE_0_create_react_class___default()({
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_invariant__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__RouteUtils__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__InternalPropTypes__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__InternalPropTypes__ = __webpack_require__(21);
 
 
 
@@ -33775,7 +31854,7 @@ var Route = __WEBPACK_IMPORTED_MODULE_0_create_react_class___default()({
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 180 */
+/* 176 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33783,10 +31862,10 @@ var Route = __WEBPACK_IMPORTED_MODULE_0_create_react_class___default()({
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_Actions___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_history_lib_Actions__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(79);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__createMemoryHistory__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__createTransitionManager__ = __webpack_require__(72);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__RouteUtils__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__RouterUtils__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__RouterUtils__ = __webpack_require__(74);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -33845,12 +31924,12 @@ function match(_ref, callback) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 181 */
+/* 177 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
-var strictUriEncode = __webpack_require__(182);
+var strictUriEncode = __webpack_require__(178);
 var objectAssign = __webpack_require__(10);
 
 function encoderForArrayFormat(opts) {
@@ -34057,7 +32136,7 @@ exports.stringify = function (obj, opts) {
 
 
 /***/ }),
-/* 182 */
+/* 178 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34070,7 +32149,7 @@ module.exports = function (str) {
 
 
 /***/ }),
-/* 183 */
+/* 179 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34088,7 +32167,7 @@ var _invariant = __webpack_require__(2);
 
 var _invariant2 = _interopRequireDefault(_invariant);
 
-var _LocationUtils = __webpack_require__(15);
+var _LocationUtils = __webpack_require__(16);
 
 var _PathUtils = __webpack_require__(9);
 
@@ -34217,7 +32296,7 @@ exports.default = createMemoryHistory;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 184 */
+/* 180 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34279,14 +32358,14 @@ var loopAsync = exports.loopAsync = function loopAsync(turns, work, callback) {
 };
 
 /***/ }),
-/* 185 */
+/* 181 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__RouterContext__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routerWarning__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__routerWarning__ = __webpack_require__(14);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -34331,19 +32410,19 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(0)))
 
 /***/ }),
-/* 186 */
+/* 182 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_createBrowserHistory__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_createBrowserHistory__ = __webpack_require__(183);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_createBrowserHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_history_lib_createBrowserHistory__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createRouterHistory__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createRouterHistory__ = __webpack_require__(82);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1__createRouterHistory__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0_history_lib_createBrowserHistory___default.a));
 
 /***/ }),
-/* 187 */
+/* 183 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34363,7 +32442,7 @@ var _BrowserProtocol = __webpack_require__(47);
 
 var BrowserProtocol = _interopRequireWildcard(_BrowserProtocol);
 
-var _RefreshProtocol = __webpack_require__(188);
+var _RefreshProtocol = __webpack_require__(184);
 
 var RefreshProtocol = _interopRequireWildcard(_RefreshProtocol);
 
@@ -34443,7 +32522,7 @@ exports.default = createBrowserHistory;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 188 */
+/* 184 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34467,7 +32546,7 @@ Object.defineProperty(exports, 'go', {
   }
 });
 
-var _LocationUtils = __webpack_require__(15);
+var _LocationUtils = __webpack_require__(16);
 
 var _PathUtils = __webpack_require__(9);
 
@@ -34486,19 +32565,19 @@ var replaceLocation = exports.replaceLocation = function replaceLocation(locatio
 };
 
 /***/ }),
-/* 189 */
+/* 185 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_createHashHistory__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_createHashHistory__ = __webpack_require__(186);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_history_lib_createHashHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_history_lib_createHashHistory__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createRouterHistory__ = __webpack_require__(84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__createRouterHistory__ = __webpack_require__(82);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (Object(__WEBPACK_IMPORTED_MODULE_1__createRouterHistory__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0_history_lib_createHashHistory___default.a));
 
 /***/ }),
-/* 190 */
+/* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34520,7 +32599,7 @@ var _ExecutionEnvironment = __webpack_require__(46);
 
 var _DOMUtils = __webpack_require__(25);
 
-var _HashProtocol = __webpack_require__(191);
+var _HashProtocol = __webpack_require__(187);
 
 var HashProtocol = _interopRequireWildcard(_HashProtocol);
 
@@ -34652,7 +32731,7 @@ exports.default = createHashHistory;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 191 */
+/* 187 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -34680,11 +32759,11 @@ var _warning = __webpack_require__(3);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _LocationUtils = __webpack_require__(15);
+var _LocationUtils = __webpack_require__(16);
 
 var _DOMUtils = __webpack_require__(25);
 
-var _DOMStateStorage = __webpack_require__(83);
+var _DOMStateStorage = __webpack_require__(81);
 
 var _PathUtils = __webpack_require__(9);
 
@@ -34795,6 +32874,2184 @@ var replaceLocation = exports.replaceLocation = function replaceLocation(locatio
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
+/* 188 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRedux = __webpack_require__(11);
+
+var _infoReducer = __webpack_require__(22);
+
+var _currentPageReducer = __webpack_require__(13);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var BasicInfo = function (_React$Component) {
+    _inherits(BasicInfo, _React$Component);
+
+    function BasicInfo(props) {
+        _classCallCheck(this, BasicInfo);
+
+        var _this = _possibleConstructorReturn(this, (BasicInfo.__proto__ || Object.getPrototypeOf(BasicInfo)).call(this, props));
+
+        _this.state = {
+            firstName: props.firstName,
+            lastName: props.lastName,
+            email: props.email,
+            website: props.website
+        };
+        _this.submitHandler = _this.submitHandler.bind(_this);
+        _this.changeHandler = _this.changeHandler.bind(_this);
+        return _this;
+    }
+
+    _createClass(BasicInfo, [{
+        key: 'submitHandler',
+        value: function submitHandler(event) {
+            event.preventDefault();
+            var elements = document.getElementById('basicInfoForm').elements;
+
+            // there are 4 fields 
+            for (var i = 0; i <= 3; i++) {
+                this.props.updateInfo(elements[i].name, elements[i].value);
+            }
+
+            this.props.locationPage();
+        }
+    }, {
+        key: 'changeHandler',
+        value: function changeHandler(event) {
+            var inputValue = event.target.value;
+            this.setState(_defineProperty({}, event.target.name, inputValue));
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'h3',
+                    null,
+                    'Basic Info'
+                ),
+                _react2.default.createElement(
+                    'form',
+                    { onSubmit: this.submitHandler, id: 'basicInfoForm' },
+                    _react2.default.createElement(
+                        'label',
+                        { className: 'required' },
+                        'First Name:'
+                    ),
+                    _react2.default.createElement('input', {
+                        className: 'form-control',
+                        name: 'firstName',
+                        type: 'text',
+                        required: true,
+                        value: this.state.firstName,
+                        onChange: this.changeHandler }),
+                    _react2.default.createElement(
+                        'label',
+                        { className: 'required' },
+                        'Last Name:'
+                    ),
+                    _react2.default.createElement('input', {
+                        className: 'form-control',
+                        name: 'lastName',
+                        type: 'text',
+                        required: true,
+                        value: this.state.lastName,
+                        onChange: this.changeHandler }),
+                    _react2.default.createElement(
+                        'label',
+                        { className: 'required' },
+                        'Email:'
+                    ),
+                    _react2.default.createElement('input', {
+                        className: 'form-control',
+                        name: 'email',
+                        type: 'email',
+                        required: true,
+                        value: this.state.email,
+                        onChange: this.changeHandler }),
+                    'Website:',
+                    _react2.default.createElement('input', {
+                        className: 'form-control',
+                        name: 'website',
+                        type: 'text',
+                        value: this.state.website,
+                        onChange: this.changeHandler }),
+                    _react2.default.createElement(
+                        'button',
+                        { className: 'btn btn-success', type: 'submit' },
+                        'Next'
+                    )
+                )
+            );
+        }
+    }]);
+
+    return BasicInfo;
+}(_react2.default.Component);
+
+var mapStateToProps = function mapStateToProps(state) {
+    return {
+        firstName: state.info.firstName,
+        lastName: state.info.lastName,
+        email: state.info.email,
+        website: state.info.website
+    };
+};
+
+var mapDispatchToProps = {
+    updateInfo: _infoReducer.updateInfo,
+    locationPage: _currentPageReducer.locationPage
+};
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(BasicInfo);
+
+/***/ }),
+/* 189 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRedux = __webpack_require__(11);
+
+var _currentPageReducer = __webpack_require__(13);
+
+var _infoReducer = __webpack_require__(22);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Location = function (_React$Component) {
+    _inherits(Location, _React$Component);
+
+    function Location(props) {
+        _classCallCheck(this, Location);
+
+        var _this = _possibleConstructorReturn(this, (Location.__proto__ || Object.getPrototypeOf(Location)).call(this, props));
+
+        _this.state = {
+            city: props.city,
+            state: props.state,
+            country: props.country
+        };
+        _this.submitHandler = _this.submitHandler.bind(_this);
+        _this.changeHandler = _this.changeHandler.bind(_this);
+        _this.onBackClickHandler = _this.onBackClickHandler.bind(_this);
+        return _this;
+    }
+
+    _createClass(Location, [{
+        key: 'submitHandler',
+        value: function submitHandler(event) {
+            event.preventDefault();
+            var elements = document.getElementById('locationForm').elements;
+
+            // there are 3 fields 
+            for (var i = 0; i <= 2; i++) {
+                this.props.updateInfo(elements[i].name, elements[i].value);
+            }
+
+            this.props.educationPage();
+        }
+    }, {
+        key: 'onBackClickHandler',
+        value: function onBackClickHandler() {
+            console.log('clicked');
+            this.props.basicPage();
+        }
+    }, {
+        key: 'changeHandler',
+        value: function changeHandler(event) {
+            console.log('hhhhh');
+            var inputValue = event.target.value;
+            this.setState(_defineProperty({}, event.target.name, inputValue));
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            console.log('location', this.props);
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'h3',
+                    null,
+                    'Location'
+                ),
+                _react2.default.createElement(
+                    'h6',
+                    null,
+                    'Where are you based?'
+                ),
+                _react2.default.createElement(
+                    'form',
+                    { onSubmit: this.submitHandler, id: 'locationForm' },
+                    _react2.default.createElement(
+                        'label',
+                        { className: 'required' },
+                        'City:'
+                    ),
+                    _react2.default.createElement('input', {
+                        name: 'city',
+                        className: 'form-control required',
+                        type: 'text',
+                        required: true,
+                        value: this.state.city,
+                        onChange: this.changeHandler }),
+                    'State:',
+                    _react2.default.createElement(
+                        'select',
+                        {
+                            name: 'state',
+                            id: 'state',
+                            required: true,
+                            className: 'required'
+                        },
+                        _react2.default.createElement(
+                            'option',
+                            { value: '', defaultValue: true },
+                            'Select State'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: this.state.state, selected: true },
+                            this.state.state
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'AL' },
+                            'AL'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'AK' },
+                            'AK'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'AR' },
+                            'AR'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'AZ' },
+                            'AZ'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'CA' },
+                            'CA'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'CO' },
+                            'CO'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'CT' },
+                            'CT'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'DC' },
+                            'DC'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'DE' },
+                            'DE'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'FL' },
+                            'FL'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'GA' },
+                            'GA'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'HI' },
+                            'HI'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'IA' },
+                            'IA'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'ID' },
+                            'ID'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'IL' },
+                            'IL'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'IN' },
+                            'IN'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'KS' },
+                            'KS'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'KY' },
+                            'KY'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'LA' },
+                            'LA'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'MA' },
+                            'MA'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'MD' },
+                            'MD'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'ME' },
+                            'ME'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'MI' },
+                            'MI'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'MN' },
+                            'MN'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'MO' },
+                            'MO'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'MS' },
+                            'MS'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'MT' },
+                            'MT'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'NC' },
+                            'NC'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'NE' },
+                            'NE'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'NH' },
+                            'NH'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'NJ' },
+                            'NJ'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'NM' },
+                            'NM'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'NV' },
+                            'NV'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'NY' },
+                            'NY'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'ND' },
+                            'ND'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'OH' },
+                            'OH'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'OK' },
+                            'OK'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'OR' },
+                            'OR'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'PA' },
+                            'PA'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'RI' },
+                            'RI'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'SC' },
+                            'SC'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'SD' },
+                            'SD'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'TN' },
+                            'TN'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'TX' },
+                            'TX'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'UT' },
+                            'UT'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'VT' },
+                            'VT'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'VA' },
+                            'VA'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'WA' },
+                            'WA'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'WI' },
+                            'WI'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'WV' },
+                            'WV'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'WY' },
+                            'WY'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Other' },
+                            'Other / Not United States'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'label',
+                        { className: 'required' },
+                        'Country/Region:'
+                    ),
+                    _react2.default.createElement(
+                        'select',
+                        {
+                            required: true,
+                            name: 'country'
+                        },
+                        _react2.default.createElement(
+                            'option',
+                            { value: this.state.country, selected: true },
+                            this.state.country
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Afghanistan' },
+                            'Afghanistan'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Albania' },
+                            'Albania'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Algeria' },
+                            'Algeria'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'American Samoa' },
+                            'American Samoa'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Andorra' },
+                            'Andorra'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Angola' },
+                            'Angola'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Anguilla' },
+                            'Anguilla'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Antartica' },
+                            'Antarctica'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Antigua and Barbuda' },
+                            'Antigua and Barbuda'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Argentina' },
+                            'Argentina'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Armenia' },
+                            'Armenia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Aruba' },
+                            'Aruba'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Australia' },
+                            'Australia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Austria' },
+                            'Austria'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Azerbaijan' },
+                            'Azerbaijan'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Bahamas' },
+                            'Bahamas'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Bahrain' },
+                            'Bahrain'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Bangladesh' },
+                            'Bangladesh'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Barbados' },
+                            'Barbados'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Belarus' },
+                            'Belarus'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Belgium' },
+                            'Belgium'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Belize' },
+                            'Belize'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Benin' },
+                            'Benin'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Bermuda' },
+                            'Bermuda'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Bhutan' },
+                            'Bhutan'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Bolivia' },
+                            'Bolivia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Bosnia and Herzegowina' },
+                            'Bosnia and Herzegowina'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Botswana' },
+                            'Botswana'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Bouvet Island' },
+                            'Bouvet Island'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Brazil' },
+                            'Brazil'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'British Indian Ocean Territory' },
+                            'British Indian Ocean Territory'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Brunei Darussalam' },
+                            'Brunei Darussalam'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Bulgaria' },
+                            'Bulgaria'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Burkina Faso' },
+                            'Burkina Faso'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Burundi' },
+                            'Burundi'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Cambodia' },
+                            'Cambodia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Cameroon' },
+                            'Cameroon'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Canada' },
+                            'Canada'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Cape Verde' },
+                            'Cape Verde'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Cayman Islands' },
+                            'Cayman Islands'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Central African Republic' },
+                            'Central African Republic'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Chad' },
+                            'Chad'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Chile' },
+                            'Chile'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'China' },
+                            'China'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Christmas Island' },
+                            'Christmas Island'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Cocos Islands' },
+                            'Cocos (Keeling) Islands'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Colombia' },
+                            'Colombia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Comoros' },
+                            'Comoros'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Congo' },
+                            'Congo'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Congo' },
+                            'Congo, the Democratic Republic of the'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Cook Islands' },
+                            'Cook Islands'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Costa Rica' },
+                            'Costa Rica'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Cota D\'Ivoire' },
+                            'Cote d\'Ivoire'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Croatia' },
+                            'Croatia (Hrvatska)'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Cuba' },
+                            'Cuba'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Cyprus' },
+                            'Cyprus'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Czech Republic' },
+                            'Czech Republic'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Denmark' },
+                            'Denmark'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Djibouti' },
+                            'Djibouti'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Dominica' },
+                            'Dominica'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Dominican Republic' },
+                            'Dominican Republic'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'East Timor' },
+                            'East Timor'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Ecuador' },
+                            'Ecuador'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Egypt' },
+                            'Egypt'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'El Salvador' },
+                            'El Salvador'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Equatorial Guinea' },
+                            'Equatorial Guinea'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Eritrea' },
+                            'Eritrea'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Estonia' },
+                            'Estonia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Ethiopia' },
+                            'Ethiopia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Falkland Islands' },
+                            'Falkland Islands (Malvinas)'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Faroe Islands' },
+                            'Faroe Islands'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Fiji' },
+                            'Fiji'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Finland' },
+                            'Finland'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'France' },
+                            'France'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'France Metropolitan' },
+                            'France, Metropolitan'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'French Guiana' },
+                            'French Guiana'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'French Polynesia' },
+                            'French Polynesia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'French Southern Territories' },
+                            'French Southern Territories'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Gabon' },
+                            'Gabon'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Gambia' },
+                            'Gambia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Georgia' },
+                            'Georgia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Germany' },
+                            'Germany'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Ghana' },
+                            'Ghana'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Gibraltar' },
+                            'Gibraltar'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Greece' },
+                            'Greece'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Greenland' },
+                            'Greenland'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Grenada' },
+                            'Grenada'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Guadeloupe' },
+                            'Guadeloupe'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Guam' },
+                            'Guam'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Guatemala' },
+                            'Guatemala'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Guinea' },
+                            'Guinea'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Guinea-Bissau' },
+                            'Guinea-Bissau'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Guyana' },
+                            'Guyana'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Haiti' },
+                            'Haiti'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Heard and McDonald Islands' },
+                            'Heard and Mc Donald Islands'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Holy See' },
+                            'Holy See (Vatican City State)'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Honduras' },
+                            'Honduras'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Hong Kong' },
+                            'Hong Kong'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Hungary' },
+                            'Hungary'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Iceland' },
+                            'Iceland'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'India' },
+                            'India'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Indonesia' },
+                            'Indonesia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Iran' },
+                            'Iran (Islamic Republic of)'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Iraq' },
+                            'Iraq'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Ireland' },
+                            'Ireland'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Israel' },
+                            'Israel'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Italy' },
+                            'Italy'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Jamaica' },
+                            'Jamaica'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Japan' },
+                            'Japan'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Jordan' },
+                            'Jordan'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Kazakhstan' },
+                            'Kazakhstan'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Kenya' },
+                            'Kenya'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Kiribati' },
+                            'Kiribati'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Democratic People\'s Republic of Korea' },
+                            'Korea, Democratic People\'s Republic of'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Korea' },
+                            'Korea, Republic of'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Kuwait' },
+                            'Kuwait'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Kyrgyzstan' },
+                            'Kyrgyzstan'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Lao' },
+                            'Lao People\'s Democratic Republic'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Latvia' },
+                            'Latvia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Lebanon' },
+                            'Lebanon'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Lesotho' },
+                            'Lesotho'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Liberia' },
+                            'Liberia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Libyan Arab Jamahiriya' },
+                            'Libyan Arab Jamahiriya'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Liechtenstein' },
+                            'Liechtenstein'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Lithuania' },
+                            'Lithuania'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Luxembourg' },
+                            'Luxembourg'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Macau' },
+                            'Macau'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Macedonia' },
+                            'Macedonia, The Former Yugoslav Republic of'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Madagascar' },
+                            'Madagascar'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Malawi' },
+                            'Malawi'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Malaysia' },
+                            'Malaysia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Maldives' },
+                            'Maldives'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Mali' },
+                            'Mali'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Malta' },
+                            'Malta'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Marshall Islands' },
+                            'Marshall Islands'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Martinique' },
+                            'Martinique'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Mauritania' },
+                            'Mauritania'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Mauritius' },
+                            'Mauritius'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Mayotte' },
+                            'Mayotte'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Mexico' },
+                            'Mexico'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Micronesia' },
+                            'Micronesia, Federated States of'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Moldova' },
+                            'Moldova, Republic of'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Monaco' },
+                            'Monaco'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Mongolia' },
+                            'Mongolia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Montserrat' },
+                            'Montserrat'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Morocco' },
+                            'Morocco'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Mozambique' },
+                            'Mozambique'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Myanmar' },
+                            'Myanmar'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Namibia' },
+                            'Namibia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Nauru' },
+                            'Nauru'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Nepal' },
+                            'Nepal'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Netherlands' },
+                            'Netherlands'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Netherlands Antilles' },
+                            'Netherlands Antilles'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'New Caledonia' },
+                            'New Caledonia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'New Zealand' },
+                            'New Zealand'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Nicaragua' },
+                            'Nicaragua'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Niger' },
+                            'Niger'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Nigeria' },
+                            'Nigeria'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Niue' },
+                            'Niue'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Norfolk Island' },
+                            'Norfolk Island'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Northern Mariana Islands' },
+                            'Northern Mariana Islands'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Norway' },
+                            'Norway'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Oman' },
+                            'Oman'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Pakistan' },
+                            'Pakistan'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Palau' },
+                            'Palau'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Panama' },
+                            'Panama'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Papua New Guinea' },
+                            'Papua New Guinea'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Paraguay' },
+                            'Paraguay'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Peru' },
+                            'Peru'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Philippines' },
+                            'Philippines'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Pitcairn' },
+                            'Pitcairn'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Poland' },
+                            'Poland'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Portugal' },
+                            'Portugal'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Puerto Rico' },
+                            'Puerto Rico'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Qatar' },
+                            'Qatar'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Reunion' },
+                            'Reunion'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Romania' },
+                            'Romania'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Russia' },
+                            'Russian Federation'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Rwanda' },
+                            'Rwanda'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Saint Kitts and Nevis' },
+                            'Saint Kitts and Nevis'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Saint LUCIA' },
+                            'Saint LUCIA'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Saint Vincent' },
+                            'Saint Vincent and the Grenadines'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Samoa' },
+                            'Samoa'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'San Marino' },
+                            'San Marino'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Sao Tome and Principe' },
+                            'Sao Tome and Principe'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Saudi Arabia' },
+                            'Saudi Arabia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Senegal' },
+                            'Senegal'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Seychelles' },
+                            'Seychelles'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Sierra' },
+                            'Sierra Leone'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Singapore' },
+                            'Singapore'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Slovakia' },
+                            'Slovakia (Slovak Republic)'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Slovenia' },
+                            'Slovenia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Solomon Islands' },
+                            'Solomon Islands'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Somalia' },
+                            'Somalia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'South Africa' },
+                            'South Africa'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'South Georgia' },
+                            'South Georgia and the South Sandwich Islands'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Span' },
+                            'Spain'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'SriLanka' },
+                            'Sri Lanka'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'St. Helena' },
+                            'St. Helena'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'St. Pierre and Miguelon' },
+                            'St. Pierre and Miquelon'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Sudan' },
+                            'Sudan'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Suriname' },
+                            'Suriname'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Svalbard' },
+                            'Svalbard and Jan Mayen Islands'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Swaziland' },
+                            'Swaziland'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Sweden' },
+                            'Sweden'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Switzerland' },
+                            'Switzerland'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Syria' },
+                            'Syrian Arab Republic'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Taiwan' },
+                            'Taiwan, Province of China'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Tajikistan' },
+                            'Tajikistan'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Tanzania' },
+                            'Tanzania, United Republic of'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Thailand' },
+                            'Thailand'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Togo' },
+                            'Togo'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Tokelau' },
+                            'Tokelau'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Tonga' },
+                            'Tonga'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Trinidad and Tobago' },
+                            'Trinidad and Tobago'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Tunisia' },
+                            'Tunisia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Turkey' },
+                            'Turkey'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Turkmenistan' },
+                            'Turkmenistan'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Turks and Caicos' },
+                            'Turks and Caicos Islands'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Tuvalu' },
+                            'Tuvalu'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Uganda' },
+                            'Uganda'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Ukraine' },
+                            'Ukraine'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'United Arab Emirates' },
+                            'United Arab Emirates'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'United Kingdom' },
+                            'United Kingdom'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'United States' },
+                            'United States'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'United States Minor Outlying Islands' },
+                            'United States Minor Outlying Islands'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Uruguay' },
+                            'Uruguay'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Uzbekistan' },
+                            'Uzbekistan'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Vanuatu' },
+                            'Vanuatu'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Venezuela' },
+                            'Venezuela'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Vietnam' },
+                            'Viet Nam'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Virgin Islands (British)' },
+                            'Virgin Islands (British)'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Virgin Islands (U.S)' },
+                            'Virgin Islands (U.S.)'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Wallis and Futana Islands' },
+                            'Wallis and Futuna Islands'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Western Sahara' },
+                            'Western Sahara'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Yemen' },
+                            'Yemen'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Yugoslavia' },
+                            'Yugoslavia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Zambia' },
+                            'Zambia'
+                        ),
+                        _react2.default.createElement(
+                            'option',
+                            { value: 'Zimbabwe' },
+                            'Zimbabwe'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'button',
+                        { className: 'btn btn-success', type: 'submit' },
+                        'Next'
+                    ),
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement(
+                        'button',
+                        { onClick: this.onBackClickHandler, className: 'btn btn-secondary' },
+                        'Back'
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Location;
+}(_react2.default.Component);
+
+var mapStateToProps = function mapStateToProps(state) {
+    return {
+        city: state.info.city,
+        state: state.info.state,
+        country: state.info.country
+    };
+};
+
+var mapDispatchToProps = {
+    basicPage: _currentPageReducer.basicPage,
+    educationPage: _currentPageReducer.educationPage,
+    updateInfo: _infoReducer.updateInfo
+};
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Location);
+
+/***/ }),
+/* 190 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRedux = __webpack_require__(11);
+
+var _infoReducer = __webpack_require__(22);
+
+var _currentPageReducer = __webpack_require__(13);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Education = function (_React$Component) {
+    _inherits(Education, _React$Component);
+
+    function Education(props) {
+        _classCallCheck(this, Education);
+
+        var _this = _possibleConstructorReturn(this, (Education.__proto__ || Object.getPrototypeOf(Education)).call(this, props));
+
+        _this.state = props.school;
+        _this.submitHandler = _this.submitHandler.bind(_this);
+        _this.onBackClickHandler = _this.onBackClickHandler.bind(_this);
+        return _this;
+    }
+
+    _createClass(Education, [{
+        key: 'componentWillMount',
+        value: function componentWillMount() {
+            this.props.deleteAllSchools();
+        }
+    }, {
+        key: 'submitHandler',
+        value: function submitHandler(event) {
+            event.preventDefault();
+            var target = event.target;
+            this.props.putSchool(target.school1.value);
+            target.school2.value && this.props.putSchool(target.school2.value);
+            this.props.summaryPage();
+        }
+    }, {
+        key: 'onBackClickHandler',
+        value: function onBackClickHandler() {
+            this.props.locationPage();
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            console.log(this.props);
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'h3',
+                    null,
+                    'Education'
+                ),
+                _react2.default.createElement(
+                    'form',
+                    { onSubmit: this.submitHandler },
+                    _react2.default.createElement(
+                        'label',
+                        { className: 'required' },
+                        'School 1:'
+                    ),
+                    _react2.default.createElement('input', {
+                        name: 'school1',
+                        className: 'form-control',
+                        type: 'text',
+                        required: true,
+                        value: this.props.school[0] }),
+                    _react2.default.createElement(
+                        'label',
+                        null,
+                        'School 2:'
+                    ),
+                    _react2.default.createElement('input', {
+                        name: 'school2',
+                        className: 'form-control',
+                        type: 'text',
+                        value: this.props.school[1] && this.props.school[1] }),
+                    _react2.default.createElement(
+                        'button',
+                        { className: 'btn btn-success', type: 'submit' },
+                        'Next'
+                    ),
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement(
+                        'button',
+                        { onClick: this.onBackClickHandler, className: 'btn btn-secondary' },
+                        'Back'
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Education;
+}(_react2.default.Component);
+
+var mapStateToProps = function mapStateToProps(state) {
+    return {
+        school: state.info.school
+    };
+};
+
+var mapPropsToProps = {
+    putSchool: _infoReducer.putSchool,
+    deleteAllSchools: _infoReducer.deleteAllSchools,
+    locationPage: _currentPageReducer.locationPage,
+    summaryPage: _currentPageReducer.summaryPage
+};
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps, mapPropsToProps)(Education);
+
+/***/ }),
+/* 191 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRedux = __webpack_require__(11);
+
+var _currentPageReducer = __webpack_require__(13);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Begin = function (_React$Component) {
+    _inherits(Begin, _React$Component);
+
+    function Begin(props) {
+        _classCallCheck(this, Begin);
+
+        var _this = _possibleConstructorReturn(this, (Begin.__proto__ || Object.getPrototypeOf(Begin)).call(this, props));
+
+        _this.basicClickHandler = _this.basicClickHandler.bind(_this);
+        _this.locationClickHandler = _this.locationClickHandler.bind(_this);
+        _this.educationClickHandler = _this.educationClickHandler.bind(_this);
+        return _this;
+    }
+
+    _createClass(Begin, [{
+        key: 'basicClickHandler',
+        value: function basicClickHandler() {
+            this.props.basicPage();
+        }
+    }, {
+        key: 'locationClickHandler',
+        value: function locationClickHandler() {
+            this.props.locationPage();
+        }
+    }, {
+        key: 'educationClickHandler',
+        value: function educationClickHandler() {
+            this.props.educationPage();
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var info = this.props.info;
+            console.log(this.props);
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'h4',
+                    null,
+                    'Please confirm the info below:'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    _react2.default.createElement(
+                        'h6',
+                        null,
+                        'Basic Info ',
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.basicClickHandler, className: 'summary-button' },
+                            'edit'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'ul',
+                        null,
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                'First Name:'
+                            ),
+                            ' ',
+                            info.firstName
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                'Last Name:'
+                            ),
+                            ' ',
+                            info.lastName
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                'Email:'
+                            ),
+                            ' ',
+                            info.email
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                'Website:'
+                            ),
+                            ' ',
+                            info.website
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    _react2.default.createElement(
+                        'h6',
+                        null,
+                        'Location ',
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.locationClickHandler, className: 'summary-button' },
+                            'edit'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'ul',
+                        null,
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                'City:'
+                            ),
+                            ' ',
+                            info.city
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                'State:'
+                            ),
+                            ' ',
+                            info.state
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                'Country'
+                            ),
+                            ' ',
+                            info.country
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    null,
+                    _react2.default.createElement(
+                        'h6',
+                        null,
+                        'Education ',
+                        _react2.default.createElement(
+                            'button',
+                            { onClick: this.educationClickHandler, className: 'summary-button' },
+                            'edit'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'ul',
+                        null,
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                'School 1:'
+                            ),
+                            ' ',
+                            info.school[0]
+                        ),
+                        info.school[1] && _react2.default.createElement(
+                            'li',
+                            null,
+                            _react2.default.createElement(
+                                'b',
+                                null,
+                                'School 2:'
+                            ),
+                            info.school[1]
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    'button',
+                    { className: 'btn btn-success' },
+                    'Submit'
+                )
+            );
+        }
+    }]);
+
+    return Begin;
+}(_react2.default.Component);
+
+var mapStateToProps = function mapStateToProps(state) {
+    return {
+        info: state.info
+    };
+};
+
+var mapDispatchToProps = {
+    basicPage: _currentPageReducer.basicPage,
+    locationPage: _currentPageReducer.locationPage,
+    educationPage: _currentPageReducer.educationPage
+};
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Begin);
+
+/***/ }),
 /* 192 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -34811,31 +35068,15 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = __webpack_require__(23);
+var _reactRouter = __webpack_require__(71);
 
-var _history = __webpack_require__(69);
+var _history = __webpack_require__(67);
 
 var _history2 = _interopRequireDefault(_history);
 
-var _Main = __webpack_require__(72);
+var _Main = __webpack_require__(70);
 
 var _Main2 = _interopRequireDefault(_Main);
-
-var _Begin = __webpack_require__(73);
-
-var _Begin2 = _interopRequireDefault(_Begin);
-
-var _BasicInfo = __webpack_require__(85);
-
-var _BasicInfo2 = _interopRequireDefault(_BasicInfo);
-
-var _Location = __webpack_require__(86);
-
-var _Location2 = _interopRequireDefault(_Location);
-
-var _Education = __webpack_require__(87);
-
-var _Education2 = _interopRequireDefault(_Education);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -34869,187 +35110,6 @@ var Routes = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Routes;
-
-/***/ }),
-/* 193 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-//----------------------------------------< initial state >------------------------------------------
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-exports.default = function () {
-    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : schoolInitialState;
-    var action = arguments[1];
-
-    var newState = Object.assign({}, state);
-    switch (action.type) {
-        case ADD_SCHOOL:
-            newState.school.push(action.school);
-            return newState;
-        default:
-            return state;
-    }
-};
-
-var schoolInitialState = {
-    school: []
-
-    //----------------------------------------< action >------------------------------------------
-};var ADD_SCHOOL = 'ADD_SCHOOL';
-
-//----------------------------------------< action creator >------------------------------------------
-var addSchool = exports.addSchool = function addSchool(school) {
-    return {
-        type: ADD_SCHOOL,
-        school: school
-    };
-};
-
-//----------------------------------------< thunk creator >------------------------------------------
-var putSchool = exports.putSchool = function putSchool(school) {
-    return function (dispatch) {
-        return dispatch(addSchool(school));
-    };
-};
-
-//----------------------------------------< reducer >------------------------------------------
-
-/***/ }),
-/* 194 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRedux = __webpack_require__(12);
-
-var _currentPageReducer = __webpack_require__(21);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Begin = function (_React$Component) {
-    _inherits(Begin, _React$Component);
-
-    function Begin(props) {
-        _classCallCheck(this, Begin);
-
-        return _possibleConstructorReturn(this, (Begin.__proto__ || Object.getPrototypeOf(Begin)).call(this, props));
-    }
-
-    _createClass(Begin, [{
-        key: 'render',
-        value: function render() {
-            console.log('in summary', this.props);
-            var basicInfo = this.props.basicInfo,
-                location = this.props.location,
-                education = this.props.education;
-
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'h4',
-                    null,
-                    'Please confirm the info below:'
-                ),
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    _react2.default.createElement(
-                        'h6',
-                        null,
-                        'Basic Info'
-                    ),
-                    _react2.default.createElement(
-                        'ul',
-                        null,
-                        _react2.default.createElement(
-                            'li',
-                            null,
-                            'First Name: ',
-                            basicInfo.firstName
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            null,
-                            'Last Name: ',
-                            basicInfo.lastName
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            null,
-                            'Email: ',
-                            basicInfo.email
-                        ),
-                        _react2.default.createElement(
-                            'li',
-                            null,
-                            'Website: ',
-                            basicInfo.website
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    _react2.default.createElement(
-                        'h6',
-                        null,
-                        'Location'
-                    ),
-                    'City: State: Country:'
-                ),
-                _react2.default.createElement(
-                    'div',
-                    null,
-                    _react2.default.createElement(
-                        'h6',
-                        null,
-                        'Education'
-                    )
-                )
-            );
-        }
-    }]);
-
-    return Begin;
-}(_react2.default.Component);
-
-var mapStateToProps = function mapStateToProps(state) {
-    return {
-        basicInfo: state.basicInfo,
-        location: state.location,
-        education: state.education
-    };
-};
-
-var mapDispatchToProps = {
-    nextPage: _currentPageReducer.nextPage
-};
-
-exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Begin);
 
 /***/ })
 /******/ ]);

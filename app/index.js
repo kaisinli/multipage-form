@@ -6,7 +6,7 @@ import store from './store'
 import '../public/index.css';
 import { Route, Router } from 'react-router-dom'
 import history from './history'
-import Main from './components/containers/Main'
+import Main from './components/presentational/Main'
 import Routes from './routes'
 
 // routes

@@ -6,35 +6,57 @@ const pageInitialState = {
 }
 
 //----------------------------------------< action >------------------------------------------
-const GET_NEXT_PAGE = 'UPDATE_NEXT_PAGE';
-const GET_PREVIOUS_PAGE = 'GET_PREVIOUS_PAGE';
+
+
+const GET_BASIC_INFO_PAGE = 'GET_BASIC_INFO_PAGE';
+const GET_LOCATION_PAGE = 'GET_LOCATION_PAGE';
+const GET_EDUCATION_PAGE = 'GET_EDUCATION_PAGE';
+const GET_SUMMARY_PAGE = 'GET_SUMMARY_PAGE'
+
+
 
 //----------------------------------------< action creator >------------------------------------------
-export const getNextPage = () => ({
-    type: GET_NEXT_PAGE
+
+export const getBasicInfoPage = () => ({
+    type: GET_BASIC_INFO_PAGE
 })
 
-export const getPreviousPage = () => ({
-    type: GET_PREVIOUS_PAGE
+export const getLocationPage = () => ({
+    type: GET_LOCATION_PAGE
+})
+
+export const getEducationPage = () => ({
+    type: GET_EDUCATION_PAGE
+})
+
+export const getSummaryPage = () => ({
+    type: GET_SUMMARY_PAGE
 })
 
 //----------------------------------------< thunk creator >------------------------------------------
-export const nextPage = () =>
-    dispatch => dispatch(getNextPage())
+export const basicPage = () =>
+    dispatch => dispatch(getBasicInfoPage())
 
-export const previousPage = () =>
-    dispatch => dispatch(getPreviousPage())
+export const locationPage = () =>
+    dispatch => dispatch(getLocationPage())
+
+export const educationPage = () =>
+    dispatch => dispatch(getEducationPage())
+
+export const summaryPage = () =>
+    dispatch => dispatch(getSummaryPage())
 
 //----------------------------------------< reducer >------------------------------------------
 export default function (state = pageInitialState, action) {
-    let newState = Object.assign({}, state);
     switch (action.type) {
-        case GET_NEXT_PAGE:
-            newState.currentPage++;
-            return newState;
-        case GET_PREVIOUS_PAGE:
-            newState.currentPage--;
-            return newState;
+        case GET_BASIC_INFO_PAGE:
+            return Object.assign({}, state, { currentPage: 1 });
+        case GET_LOCATION_PAGE:
+            return Object.assign({}, state, { currentPage: 2 });
+        case GET_EDUCATION_PAGE:
+            return Object.assign({}, state, { currentPage: 3 });
+        case GET_SUMMARY_PAGE:
+            return Object.assign({}, state, { currentPage: 4 });
         default:
             return state
     }

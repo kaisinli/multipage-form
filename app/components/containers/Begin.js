@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
-import { nextPage } from '../../reducers/currentPageReducer'
+import { basicPage } from '../../reducers/currentPageReducer'
 
 class Begin extends React.Component {
     constructor(props) {
@@ -10,7 +10,7 @@ class Begin extends React.Component {
     }
 
     clickHandler() {
-        this.props.nextPage()
+        this.props.basicPage()
     }
 
     render() {
@@ -23,7 +23,7 @@ class Begin extends React.Component {
 }
 
 const mapDispatchToProps = {
-    nextPage
+    basicPage
 }
 
 export default connect(null, mapDispatchToProps)(Begin)
