@@ -6,7 +6,6 @@ module.exports = require('express').Router()
             .then(educations => res.json(educations))
             .catch(next))
     .post('/', (req, res, next) => {
-        console.log('Adding education to DB...')
         Education.findOrCreate(
             {
                 where: {

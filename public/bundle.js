@@ -1251,7 +1251,6 @@ var GET_LOCATION_PAGE = 'GET_LOCATION_PAGE';
 var GET_EDUCATION_PAGE = 'GET_EDUCATION_PAGE';
 var GET_SUMMARY_PAGE = 'GET_SUMMARY_PAGE';
 var GET_THANK_YOU_PAGE = 'GET_THANK_YOU_PAGE';
-var GET_SORRY_PAGE = 'GET_SORRY_PAGE';
 
 //----------------------------------------< action creator >------------------------------------------
 
@@ -1282,12 +1281,6 @@ var getSummaryPage = exports.getSummaryPage = function getSummaryPage() {
 var getThankYouPage = exports.getThankYouPage = function getThankYouPage() {
     return {
         type: GET_THANK_YOU_PAGE
-    };
-};
-
-var getSorryfoPage = exports.getSorryfoPage = function getSorryfoPage() {
-    return {
-        type: GET_SORRY_PAGE
     };
 };
 
@@ -1322,12 +1315,6 @@ var thankYouPage = exports.thankYouPage = function thankYouPage() {
     };
 };
 
-var sorryPage = exports.sorryPage = function sorryPage() {
-    return function (dispatch) {
-        return dispatch(getSummaryPage());
-    };
-};
-
 //----------------------------------------< reducer >------------------------------------------
 
 exports.default = function () {
@@ -1345,8 +1332,6 @@ exports.default = function () {
             return Object.assign({}, state, { currentPage: 4 });
         case GET_THANK_YOU_PAGE:
             return Object.assign({}, state, { currentPage: 5 });
-        case GET_SORRY_PAGE:
-            return Object.assign({}, state, { currentPage: 6 });
         default:
             return state;
     }
@@ -5699,10 +5684,6 @@ var _Summary = __webpack_require__(198);
 
 var _Summary2 = _interopRequireDefault(_Summary);
 
-var _Sorry = __webpack_require__(218);
-
-var _Sorry2 = _interopRequireDefault(_Sorry);
-
 var _ThankYou = __webpack_require__(219);
 
 var _ThankYou2 = _interopRequireDefault(_ThankYou);
@@ -5718,15 +5699,14 @@ var Main = function Main(props) {
     _react2.default.createElement(
       'h1',
       { id: 'main-title' },
-      'Sign Me Up'
+      'Create Profile'
     ),
     props.currentPage === 0 && _react2.default.createElement(_Begin2.default, null),
     props.currentPage === 1 && _react2.default.createElement(_BasicInfo2.default, null),
     props.currentPage === 2 && _react2.default.createElement(_Location2.default, null),
     props.currentPage === 3 && _react2.default.createElement(_Education2.default, null),
     props.currentPage === 4 && _react2.default.createElement(_Summary2.default, null),
-    props.currentPage === 5 && _react2.default.createElement(_ThankYou2.default, null),
-    props.currentPage === 6 && _react2.default.createElement(_Sorry2.default, null)
+    props.currentPage === 5 && _react2.default.createElement(_ThankYou2.default, null)
   );
 };
 
@@ -35561,13 +35541,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Begin = function (_React$Component) {
-    _inherits(Begin, _React$Component);
+var Summary = function (_React$Component) {
+    _inherits(Summary, _React$Component);
 
-    function Begin(props) {
-        _classCallCheck(this, Begin);
+    function Summary(props) {
+        _classCallCheck(this, Summary);
 
-        var _this = _possibleConstructorReturn(this, (Begin.__proto__ || Object.getPrototypeOf(Begin)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (Summary.__proto__ || Object.getPrototypeOf(Summary)).call(this, props));
 
         _this.basicClickHandler = _this.basicClickHandler.bind(_this);
         _this.locationClickHandler = _this.locationClickHandler.bind(_this);
@@ -35576,7 +35556,7 @@ var Begin = function (_React$Component) {
         return _this;
     }
 
-    _createClass(Begin, [{
+    _createClass(Summary, [{
         key: 'basicClickHandler',
         value: function basicClickHandler() {
             this.props.basicPage();
@@ -35594,6 +35574,8 @@ var Begin = function (_React$Component) {
     }, {
         key: 'submitToDB',
         value: function submitToDB() {
+            var _this2 = this;
+
             var info = this.props.info;
             var basicInfoSubmit = {
                 firstName: info.firstName,
@@ -35613,13 +35595,16 @@ var Begin = function (_React$Component) {
 
             _axios2.default.post('api/locations', locationInfoSubmit).then(function (location) {
                 var locationId = location.data[0].id;
-                _axios2.default.post('api/users', { basicInfoSubmit: basicInfoSubmit, locationId: locationId });
-            }).catch(function (err) {
-                return console.log(err);
-            });
-
-            educationInfoSubmit.forEach(function (school) {
-                _axios2.default.post();
+                _axios2.default.post('api/users', { basicInfoSubmit: basicInfoSubmit, locationId: locationId }).then(function () {
+                    return educationInfoSubmit.forEach(function (school) {
+                        _axios2.default.post('api/educations', { school: school });
+                    });
+                }).then(function () {
+                    console.log('Submission successful');
+                    _this2.props.thankYouPage();
+                });
+            }).catch(function (error) {
+                return console.log('ERROR', error);
             });
         }
     }, {
@@ -35799,6 +35784,12 @@ var Begin = function (_React$Component) {
                         )
                     )
                 ),
+                _react2.default.createElement('br', null),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    'Please refresh page and start over if you don\'t see a success page after submission.'
+                ),
                 _react2.default.createElement(
                     'button',
                     { className: 'btn btn-success', onClick: this.submitToDB },
@@ -35808,7 +35799,7 @@ var Begin = function (_React$Component) {
         }
     }]);
 
-    return Begin;
+    return Summary;
 }(_react2.default.Component);
 
 var mapStateToProps = function mapStateToProps(state) {
@@ -35820,23 +35811,11 @@ var mapStateToProps = function mapStateToProps(state) {
 var mapDispatchToProps = {
     basicPage: _currentPageReducer.basicPage,
     locationPage: _currentPageReducer.locationPage,
-    educationPage: _currentPageReducer.educationPage
+    educationPage: _currentPageReducer.educationPage,
+    thankYouPage: _currentPageReducer.thankYouPage
 };
 
-exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Begin);
-
-// export const postBasicInfo = (firstName, lastName, email, phone, website) => {
-//     dispatch =>
-//         axios.post('api/users',
-//             {
-//                 firstName,
-//                 lastName,
-//                 email,
-//                 phone,
-//                 website
-//             })
-//             .catch(err => console.error('Creating new user unsuccessful', err))
-// }
+exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(Summary);
 
 /***/ }),
 /* 199 */
@@ -36729,37 +36708,7 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 218 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _react = __webpack_require__(1);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Sorry = function Sorry(props) {
-  return _react2.default.createElement(
-    'div',
-    null,
-    _react2.default.createElement(
-      'h2',
-      null,
-      'Submission unsuccessful. Please refresh page and try again.'
-    )
-  );
-};
-
-exports.default = Sorry;
-
-/***/ }),
+/* 218 */,
 /* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 

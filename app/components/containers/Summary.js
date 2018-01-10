@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { basicPage, locationPage, educationPage } from '../../reducers/currentPageReducer';
+import { basicPage, locationPage, educationPage, thankYouPage } from '../../reducers/currentPageReducer';
 
 import axios from 'axios'
 
-class Begin extends React.Component {
+class Summary extends React.Component {
     constructor(props) {
         super(props)
         this.basicClickHandler = this.basicClickHandler.bind(this);
@@ -42,18 +42,21 @@ class Begin extends React.Component {
         }
 
         let educationInfoSubmit = info.school
-        
 
         axios.post('api/locations', locationInfoSubmit)
             .then((location) => {
                 let locationId = location.data[0].id;
-                axios.post('api/users', {basicInfoSubmit, locationId: locationId})
+                axios.post('api/users', { basicInfoSubmit, locationId })
+                    .then(() =>
+                        educationInfoSubmit.forEach(school => {
+                            axios.post('api/educations', { school })
+                        }))
+                    .then(() => {
+                        console.log('Submission successful');
+                        this.props.thankYouPage()
+                    })
             })
-            .catch(err => console.log(err))
-
-        educationInfoSubmit.forEach(school => {
-            axios.post()
-        })
+            .catch (error => console.log('ERROR', error))
     }
 
     render() {
@@ -87,6 +90,8 @@ class Begin extends React.Component {
                         {info.school[1] && <li><b>School 2:</b> {info.school[1]}</li>}
                     </ul>
                 </div>
+                <br />
+                <p>Please refresh page and start over if you don't see a success page after submission.</p>
                 <button className="btn btn-success" onClick={this.submitToDB}>Submit</button>
             </div>
         )
@@ -102,21 +107,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = {
     basicPage,
     locationPage,
-    educationPage
+    educationPage,
+    thankYouPage
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Begin)
-
-
-// export const postBasicInfo = (firstName, lastName, email, phone, website) => {
-//     dispatch =>
-//         axios.post('api/users',
-//             {
-//                 firstName,
-//                 lastName,
-//                 email,
-//                 phone,
-//                 website
-//             })
-//             .catch(err => console.error('Creating new user unsuccessful', err))
-// }
+export default connect(mapStateToProps, mapDispatchToProps)(Summary)
