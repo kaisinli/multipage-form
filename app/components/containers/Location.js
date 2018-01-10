@@ -54,14 +54,11 @@ class Location extends React.Component {
                         required
                         value={this.state.city}
                         onChange={this.changeHandler} />
-                    State:
+                    <label className="required">State:</label>
                     <select
                         name="state"
-                        id="state"
                         required
-                        className="required"
                         >
-                        <option value="" defaultValue>Select State</option>
                         <option value={this.state.state} selected>{this.state.state}</option>
                         <option value="AL">AL</option>
                         <option value="AK">AK</option>

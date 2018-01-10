@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { basicPage, locationPage, educationPage } from '../../reducers/currentPageReducer';
 
+import axios from 'axios'
 
 class Begin extends React.Component {
     constructor(props) {
@@ -9,6 +10,7 @@ class Begin extends React.Component {
         this.basicClickHandler = this.basicClickHandler.bind(this);
         this.locationClickHandler = this.locationClickHandler.bind(this)
         this.educationClickHandler = this.educationClickHandler.bind(this)
+        this.submitToDB = this.submitToDB.bind(this)
     }
 
     basicClickHandler() {
@@ -23,9 +25,39 @@ class Begin extends React.Component {
         this.props.educationPage()
     }
 
+    submitToDB() {
+        let info = this.props.info;
+        let basicInfoSubmit = {
+            firstName: info.firstName,
+            lastName: info.lastName,
+            email: info.email,
+            phone: info.phone,
+            website: info.website
+        }
+
+        let locationInfoSubmit = {
+            city: info.city,
+            state: info.state,
+            country: info.country
+        }
+
+        let educationInfoSubmit = info.school
+        
+
+        axios.post('api/locations', locationInfoSubmit)
+            .then((location) => {
+                let locationId = location.data[0].id;
+                axios.post('api/users', {basicInfoSubmit, locationId: locationId})
+            })
+            .catch(err => console.log(err))
+
+        educationInfoSubmit.forEach(school => {
+            axios.post()
+        })
+    }
+
     render() {
         let info = this.props.info;
-        console.log(this.props)
 
         return (
             <div>
@@ -36,6 +68,7 @@ class Begin extends React.Component {
                         <li><b>First Name:</b> {info.firstName}</li>
                         <li><b>Last Name:</b> {info.lastName}</li>
                         <li><b>Email:</b> {info.email}</li>
+                        <li><b>Phone:</b> {info.phone}</li>
                         <li><b>Website:</b> {info.website}</li>
                     </ul>
                 </div>
@@ -51,10 +84,10 @@ class Begin extends React.Component {
                     <h6>Education <button onClick={this.educationClickHandler} className="summary-button">edit</button></h6>
                     <ul>
                         <li><b>School 1:</b> {info.school[0]}</li>
-                        {info.school[1] && <li><b>School 2:</b>{info.school[1]}</li>}
+                        {info.school[1] && <li><b>School 2:</b> {info.school[1]}</li>}
                     </ul>
                 </div>
-                <button className="btn btn-success">Submit</button>
+                <button className="btn btn-success" onClick={this.submitToDB}>Submit</button>
             </div>
         )
     }
@@ -73,3 +106,17 @@ const mapDispatchToProps = {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Begin)
+
+
+// export const postBasicInfo = (firstName, lastName, email, phone, website) => {
+//     dispatch =>
+//         axios.post('api/users',
+//             {
+//                 firstName,
+//                 lastName,
+//                 email,
+//                 phone,
+//                 website
+//             })
+//             .catch(err => console.error('Creating new user unsuccessful', err))
+// }

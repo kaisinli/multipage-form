@@ -4,6 +4,7 @@
 const infoInitialState = {
     firstName: '',
     lastName: '',
+    phone: '',
     email: '',
     website: '',
     city: '',
@@ -43,7 +44,7 @@ export const putSchool = (school) =>
 export const deleteAllSchools = () =>
     dispatch => dispatch(clearSchool())
 //----------------------------------------< reducer >-----------------------------------------------
-export default function (state = infoInitialState, action) {
+export default (state = infoInitialState, action) => {
     let newState = Object.assign({}, state);
     switch (action.type) {
         case ADD_SCHOOL:

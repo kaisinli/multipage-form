@@ -10,6 +10,7 @@ class BasicInfo extends React.Component {
             firstName: props.firstName,
             lastName: props.lastName,
             email: props.email,
+            phone: props.phone,
             website: props.website
         }
         this.submitHandler = this.submitHandler.bind(this);
@@ -21,7 +22,7 @@ class BasicInfo extends React.Component {
         let elements = document.getElementById('basicInfoForm').elements;
 
         // there are 4 fields 
-        for (let i = 0; i <= 3; i++) {
+        for (let i = 0; i <= 4; i++) {
             this.props.updateInfo(elements[i].name, elements[i].value)
         }
 
@@ -54,6 +55,14 @@ class BasicInfo extends React.Component {
                         required
                         value={this.state.lastName}
                         onChange={this.changeHandler} />
+                    <label className="required">Phone:</label>
+                    <input
+                        className="form-control"
+                        name="phone"
+                        type="number"
+                        required
+                        value={this.state.phone}
+                        onChange={this.changeHandler} />
                     <label className="required">Email:</label>
                     <input
                         className="form-control"
@@ -81,6 +90,7 @@ const mapStateToProps = state => {
         firstName: state.info.firstName,
         lastName: state.info.lastName,
         email: state.info.email,
+        phone: state.info.phone,
         website: state.info.website
     }
 }

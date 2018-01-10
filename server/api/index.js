@@ -1,11 +1,13 @@
 const router = require('express').Router();
-
-router.use('/users', require('./users')); // matches all requests to  /api/puppies/
-
-router.use(function (req, res, next) {
-  const err = new Error('Not found.');
-  err.status = 404;
-  next(err);
-});
-
 module.exports = router;
+
+router.use('/users', require('./users')); 
+router.use('/locations', require('./locations')); 
+router.use('/educations', require('./educations'));
+
+router.use((req, res, next) => {
+  const error = new Error('Not Found')
+  error.status = 404
+  next(error)
+})
+

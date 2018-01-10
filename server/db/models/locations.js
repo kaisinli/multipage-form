@@ -6,7 +6,10 @@ const Location = db.define('locations', {
         type: STRING,
         allowNull: false
     },
-    state: STRING,
+    state: {
+        type: STRING,
+        allowNull: false
+    },
     country: {
         type: STRING,
         allowNull: false

@@ -4,6 +4,8 @@ import BasicInfo from '../containers/BasicInfo';
 import Location from '../containers/Location';
 import Education from '../containers/Education';
 import Summary from '../containers/Summary';
+import Sorry from './Sorry';
+import ThankYou from './ThankYou'
 import { connect } from 'react-redux';
 
 const Main = (props) => {
@@ -15,6 +17,8 @@ const Main = (props) => {
       {props.currentPage === 2 && <Location />}
       {props.currentPage === 3 && <Education />}
       {props.currentPage === 4 && <Summary />}
+      {props.currentPage === 5 && <ThankYou />}
+      {props.currentPage === 6 && <Sorry />}
     </div>
   )
 }
