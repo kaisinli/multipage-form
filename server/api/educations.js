@@ -19,7 +19,7 @@ module.exports = require('express').Router()
             })
             .catch(next)
     })
-	.get('/:id', (req, res, next) =>
-		Education.findById(req.params.id)
-			.then(location=> res.json(location))
-			.catch(next))
+    .get('/:id', (req, res, next) =>
+        Education.findById(req.params.id)
+            .then(location => res.json(location))
+            .catch(next))

@@ -5684,7 +5684,7 @@ var _Summary = __webpack_require__(198);
 
 var _Summary2 = _interopRequireDefault(_Summary);
 
-var _ThankYou = __webpack_require__(219);
+var _ThankYou = __webpack_require__(218);
 
 var _ThankYou2 = _interopRequireDefault(_ThankYou);
 
@@ -7065,7 +7065,7 @@ var _Main = __webpack_require__(72);
 
 var _Main2 = _interopRequireDefault(_Main);
 
-var _routes = __webpack_require__(220);
+var _routes = __webpack_require__(219);
 
 var _routes2 = _interopRequireDefault(_routes);
 
@@ -35786,11 +35786,6 @@ var Summary = function (_React$Component) {
                 ),
                 _react2.default.createElement('br', null),
                 _react2.default.createElement(
-                    'p',
-                    null,
-                    'Please refresh page and start over if you don\'t see a success page after submission.'
-                ),
-                _react2.default.createElement(
                     'button',
                     { className: 'btn btn-success', onClick: this.submitToDB },
                     'Submit'
@@ -36708,8 +36703,7 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 218 */,
-/* 219 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36740,7 +36734,7 @@ var ThankYou = function ThankYou(props) {
 exports.default = ThankYou;
 
 /***/ }),
-/* 220 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

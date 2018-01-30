@@ -41,7 +41,7 @@ class Summary extends React.Component {
             country: info.country
         }
 
-        let educationInfoSubmit = info.school
+        let educationInfoSubmit = info.school;
 
         axios.post('api/locations', locationInfoSubmit)
             .then((location) => {
@@ -91,7 +91,6 @@ class Summary extends React.Component {
                     </ul>
                 </div>
                 <br />
-                <p>Please refresh page and start over if you don't see a success page after submission.</p>
                 <button className="btn btn-success" onClick={this.submitToDB}>Submit</button>
             </div>
         )
